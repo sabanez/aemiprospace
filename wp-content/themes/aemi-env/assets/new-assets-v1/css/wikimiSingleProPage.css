@@ -1,0 +1,271 @@
+.wikiDetailsPage .hero,
+.wikiDetailsPage .hero .hero-bg-img {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+}
+.wikiDetailsPage .holder {
+  position: relative;
+  top: -80px;
+}
+.wikiDetailsPage .holder .leftContent {
+  width: 70%;
+  border-top: 0;
+}
+.wikiDetailsPage .holder .contentHolder {
+  align-items: flex-start;
+}
+.wikiDetailsPage .holder .leftContent .badgesHolder {
+  gap: 24px;
+  padding-left: 24px;
+  padding-right: 24px;
+  margin-bottom: 24px;
+}
+.wikiDetailsPage .holder .leftContent .badgesHolder .highligher {
+  background: var(--color-primary);
+  gap: 8px;
+  padding: 12px;
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+}
+.wikiDetailsPage .holder .leftContent .badgesHolder .highligher span {
+  color: var(--color-white);
+  font-size: 16px;
+  font-weight: 600;
+}
+.wikiDetailsPage .holder .leftContent .badgesHolder .highligher img {
+  width: 24px;
+  height: 24px;
+}
+
+.wikiDetailsPage .holder .leftContent .badgesHolder {
+  list-style: none;
+  gap: 8px;
+  margin-bottom: 0;
+}
+.wikiDetailsPage .holder .leftContent .badgesHolder li {
+  border: none;
+  padding: 5px 20px;
+  border-radius: 50px;
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--color-white);
+}
+.wikiDetailsPage .holder .leftContent .badgesHolder li:first-child {
+  background: var(--color-purple);
+}
+.wikiDetailsPage .holder .leftContent .badgesHolder li:nth-child(2) {
+  background: var(--color-success);
+}
+
+.wikiDetailsPage .holder .leftContent .dynamicRenderSection {
+  margin-top: 4px;
+}
+.wikiDetailsPage .holder .leftContent .dynamicRenderSection .blogTitle {
+  margin-bottom: 20px;
+  font-weight: 700;
+  color: var(--color-black);
+}
+.wikiDetailsPage .holder .leftContent .dynamicRenderSection p {
+  margin-bottom: 15px;
+  font-size: 17px;
+}
+.wikiDetailsPage .holder .leftContent .dynamicRenderSection h4,
+.wikiDetailsPage .holder .leftContent .patientsGuid h4 {
+  color: var(--color-primary);
+  margin-bottom: 10px;
+  margin-top: 15px;
+}
+.wikiDetailsPage .holder .leftContent .dynamicRenderSection img {
+  width: 100%;
+  height: auto;
+}
+.wikiDetailsPage .holder .leftContent .dynamicRenderSection ul {
+  margin-left: 15px;
+}
+
+.wikiDetailsPage .holder .leftContent .patientsGuid {
+  border-top: 1px solid var(--color-border);  
+}
+.wikiDetailsPage .holder .leftContent .patientsGuid ul {
+  padding-left: 30px;
+}
+.wikiDetailsPage .holder .leftContent .patientsGuid ul li {
+  font-size: 18px;
+  font-weight: 400;
+  color: var(--color-black);
+}
+.wikiDetailsPage .holder .leftContent .patientsGuid .skills-table {
+  border-collapse: collapse;
+  width: fit-content;
+  border: 1px solid var(--color-sharp-gray);
+  display: block;
+  overflow: auto;
+  margin-bottom: 20px;
+}
+.wikiDetailsPage .holder .leftContent .patientsGuid .skills-table thead tr {
+  background-color: #f2f2f2;
+}
+.wikiDetailsPage .holder .leftContent .patientsGuid .skills-table tbody tr td p {
+  margin: 0;
+  color: var(--color-light-black);
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 21px;
+}
+.wikiDetailsPage .holder .leftContent .patientsGuid .skills-table thead th {
+  color: var(--color-grey);
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 21px;
+  text-align: left;
+}
+.wikiDetailsPage .holder .leftContent .patientsGuid .skills-table tbody td {
+  color: var(--color-light-black);
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 21px;
+}
+.wikiDetailsPage .holder .leftContent .patientsGuid .skills-table tbody td span {
+  color: var(--color-primary);
+}
+.wikiDetailsPage .holder .leftContent .patientsGuid .skills-table th,
+.wikiDetailsPage .holder .leftContent .patientsGuid .skills-table td {
+  padding: 1rem;
+}
+
+
+.wikiDetailsPage .holder .rightContent {
+  width: 30%;
+  position: relative;
+}
+.wikiDetailsPage .holder .rightContent .informationCard .card-header h4 {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 21px;
+  color: var(--color-black);
+}
+.wikiDetailsPage .holder .rightContent .informationCard ul {
+  padding: 0;
+  list-style: none;
+  margin: 0;
+}
+.wikiDetailsPage .holder .rightContent .informationCard ul li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.wikiDetailsPage .holder .rightContent .informationCard ul li p {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--color-grey);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 21px;
+}
+.wikiDetailsPage .holder .rightContent .informationCard ul li span {
+  color: var(--color-light-black);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 21px;
+}
+.wikiDetailsPage .holder .rightContent .informationCard .content-box {
+  border: 1px solid var(--color-sharp-gray);
+  background: var(--color-light-white);
+  border-radius: 12px;
+  padding: 10px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 21px;
+}
+.wikiDetailsPage .holder .rightContent .moreContent {
+  margin-top: 20px;
+}
+.wikiDetailsPage .holder .rightContent .moreContent .docChild {
+  width: 100%;
+  display: flex;
+  background-color: var(--color-white);
+  border-bottom: 1px solid var(--color-sharp-gray);
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  gap: 12px;
+}
+.wikiDetailsPage .holder .rightContent .moreContent .docChild:last-child {
+  margin-bottom: 0;
+  border-bottom: 0;
+  padding-bottom: 0;
+}
+.wikiDetailsPage .holder .rightContent .moreContent .webLeft {
+  position: relative;
+  display: flex;
+}
+.wikiDetailsPage .holder .rightContent .moreContent .webLeft img {
+  width: 130px;
+  height: 130px;
+  border-radius: 12px;
+}
+.wikiDetailsPage .holder .rightContent .moreContent .webLeft span {
+  position: absolute;
+  top: 8px;
+  left: 12px;
+  padding: 14px 10px;
+  border-radius: 50px;
+  border: none;
+  background-color: var(--color-light-white);
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--color-secondary);
+  height: 24px;
+  display: flex;
+  align-items: center;
+}
+.wikiDetailsPage .holder .rightContent .moreContent .webFich {
+  padding: 12px 0;
+}
+.wikiDetailsPage .holder .rightContent .moreContent .webFich h3 {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  color: var(--color-secondary);
+  margin-bottom: 8px;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.wikiDetailsPage .holder .rightContent .moreContent .redPub button {
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--color-primary);
+  border: none;
+  background: none;
+  cursor: pointer;
+  padding: 0;
+}
+.wikiDetailsPage .holder .rightContent .moreContent .docChild.orange-box .webLeft img {
+  border: 2px solid var(--color-primary);
+}
+.wikiDetailsPage .holder .rightContent .moreContent .docChild.orange-box .webLeft span {
+  top: 0;
+  left: 0;
+  background: var(--color-primary);
+  color: var(--color-white);
+  border-radius: 12px 0px 6px 0px;
+}
+
+@media screen and (max-width:768px) {
+  .wikiDetailsPage .holder .contentHolder{
+    flex-direction: column;
+  }
+  .wikiDetailsPage .holder .leftContent{
+    width: 100%;
+  }
+  .wikiDetailsPage .holder .rightContent{
+    width: 100%;
+  }
+}

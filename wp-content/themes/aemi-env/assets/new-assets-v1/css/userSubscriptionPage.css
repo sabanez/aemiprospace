@@ -1,0 +1,112 @@
+.subscriptionPage {
+  height: calc(100vh - 80px);
+}
+.subscriptionPage .subscriptionCard {
+  margin-top: 24px;
+  margin-left: 24px;
+  margin-right: 24px;
+}
+.subscriptionPage .subscriptionCard .card-header {
+  flex-direction: column;
+  align-items: flex-start;
+  height: auto;
+}
+.subscriptionPage .subscriptionCard .card-header .card-title {
+  font-weight: 600;
+  color: var(--color-black);
+}
+.subscriptionPage .subscriptionCard .card-header .card-description {
+  color: var(--color-light-black);
+  font-size: 17px;
+}
+
+.subscriptionPage .subscriptionCard .actionList {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.subscriptionPage .subscriptionCard .actionList ul {
+  list-style: none;
+  margin-left: 0;
+}
+.subscriptionPage .subscriptionCard .actionList ul .singleActionList {
+  border-bottom: 1px solid var(--color-border);
+  padding-top: 15px;
+  padding-bottom: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+.subscriptionPage .subscriptionCard .actionList ul .singleActionList:first-of-type {
+  padding-top: 0;
+}
+.subscriptionPage .subscriptionCard .actionList ul .singleActionList:last-of-type {
+  border-bottom: 0;
+  margin-bottom: 10px;
+}
+.subscriptionPage .subscriptionCard .actionList ul .singleActionList .leftAction h5 {
+  font-weight: 600;
+  color: var(--color-black);
+  margin-bottom: 5px;
+  font-size: 17px;
+}
+.subscriptionPage .subscriptionCard .actionList ul .singleActionList .leftAction p {
+  font-size: 15px;
+  color: var(--color-black-light);
+}
+.subscriptionPage .subscriptionCard .actionList ul .singleActionList .rightAction {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.subscriptionPage .subscriptionCard .actionList ul .singleActionList .rightAction .action {
+  display: block;
+  position: relative;
+  cursor: pointer;
+  font-size: 15px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 75px;
+  padding-left: 25px;
+  color: var(--color-black)
+}
+.subscriptionPage .subscriptionCard .actionList ul .singleActionList .rightAction .action input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  visibility: hidden;
+}
+.subscriptionPage .subscriptionCard .actionList ul .singleActionList .rightAction .action .checkmarkk {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 22px;
+  width: 22px;
+  background-color: var(--color-border);
+  border-radius: 50%;
+}
+.subscriptionPage .subscriptionCard .actionList ul .singleActionList .rightAction .action:hover input ~ .checkmarkk {
+  background-color: #ccc;
+}
+.subscriptionPage .subscriptionCard .actionList ul .singleActionList .rightAction .action input:checked ~ .checkmarkk {
+  border: 1px solid var(--color-primary);
+}
+.subscriptionPage .subscriptionCard .actionList ul .singleActionList .rightAction .action .checkmarkk:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+.subscriptionPage .subscriptionCard .actionList ul .singleActionList .rightAction .action .containerr input:checked ~ .checkmarkk:after {
+  display: block;
+}
+.subscriptionPage .subscriptionCard .actionList ul .singleActionList .rightAction .action .checkmarkk:after {
+  top: 3px;
+  left: 3px;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: var(--color-primary);
+}

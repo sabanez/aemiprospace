@@ -1,0 +1,88 @@
+.helpmySection {
+  margin-top: 30px;
+}
+.helpmySection .contentSection {
+  gap: 55px;
+  margin-top: 24px;
+}
+
+.helpmySection .contentSection .cardSection {
+  width: 70%;
+}
+.helpmySection .contentSection .cardSection form .formAttachment {
+  cursor: pointer;
+}
+.helpmySection .contentSection .cardSection form .formAttachment h6 {
+  width: 250px;
+  font-weight: 500;
+  color: var(--color-grey);
+}
+.helpmySection .contentSection .cardSection form .custom-file-upload {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border: 1px solid var(--color-border);
+  background-color: var(--color-body-bg);
+  justify-content: center;
+  border-radius: var(--radius-standard);
+  white-space: nowrap;
+  padding: 6px;
+  margin: 0;
+}
+
+
+.helpmySection .contentSection .helpmyContent {
+  width: 30%;
+}
+.helpmySection .contentSection .helpmyContent .title {
+  font-weight: 500;
+  color: var(--color-primary);
+  margin-bottom: 20px;
+}
+.helpmySection .contentSection .helpmyContent ul {
+  flex-direction: column;
+}
+.helpmySection .contentSection .helpmyContent ul li {
+  font-size: var(--font-size-small);
+  font-weight: 400;
+  margin-left: 25px;
+  color: var(--color-black-light);
+}
+
+@media only screen and (max-width: 576px) {
+  .helpmySection {
+    padding: 10px;
+  }
+}
+@media only screen and (max-width: 700px) {
+  .helpmySection {
+    margin-top: 10px;
+  }
+  .helpmySection .contentSection {
+    flex-direction: column;
+    gap: 25px;
+  }
+  .helpmySection .contentSection .cardSection {
+    width: 100%;
+  }
+  .helpmySection .contentSection .helpmyContent {
+    width: 100%;
+  }
+  .helpmySection .contentSection .cardSection form .formAttachment h6 {
+    text-wrap: nowrap;
+    width: auto;
+  }
+  .helpmySection .contentSection .cardSection form .custom-file-upload {
+    width: 200px;
+  }
+}
+@media only screen and (max-width: 812px) {
+  .helpmySection .contentSection .cardSection form .custom-file-upload ul {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 1199px) and (min-width: 813px) {
+  .helpmySection .contentSection .cardSection form .custom-file-upload ul {
+    width: 50%;
+  }
+}

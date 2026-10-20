@@ -1,0 +1,174 @@
+.subscriptionContainer {
+  background-color: var(--color-sidebar-bg);
+  padding: 30px 60px;
+}
+
+.subscriptionTitle p {
+  color: var(--color-grey);
+  margin-top: 10px;
+}
+.subscriptionTable {
+  margin-top: 30px;
+}
+.subscriptionTable table {
+  border-collapse: collapse;
+}
+.subscriptionTable table th {
+  text-align: left;
+  background-color: var(--color-light-orange);
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--color-primary);
+  padding: 15px 20px;
+}
+.subscriptionTable table tr {
+  background-color: var(--color-sidebar-bg);
+  border-bottom: 1px solid var(--color-black);
+  border-right: 1px solid var(--color-black) ;
+    border-left: 1px solid var(--color-black);
+}
+.subscriptionTable table tr:first-child {
+  border: none;
+  background-color: var(--color-sidebar-bg);
+}
+.subscriptionTable table tr:nth-child(2) {
+  border: none;
+  background-color: var(--color-sidebar-bg);
+}
+.subscriptionTable table tr:first-child td:nth-child(2){
+  border: 1px solid var(--color-black);
+  background-color: var(--color-success);
+  color: var(--color-white);
+  text-align: center;
+}
+.subscriptionTable table tr:first-child td:nth-child(3){
+  border: 1px solid var(--color-black);
+  background-color: var(--color-secondary);
+  color: var(--color-white);
+  text-align: center;
+}
+.subscriptionTable table tr:nth-child(2) td:nth-child(2) {
+  border-left:1px solid var(--color-black);
+  border-right:1px solid var(--color-black);
+}
+.subscriptionTable table tr:nth-child(2) td:nth-child(3) {
+  border-right:1px solid var(--color-black);
+}
+.subscriptionTable table tr:nth-child(2) td:nth-child(2) h2 {
+margin: 0;
+text-align: center;
+color: var(--color-primary);
+font-size: 34px;
+font-weight: 700;
+}
+.subscriptionTable table tr:nth-child(2) td:nth-child(3) h2 {
+  margin: 0;
+  text-align: center;
+  color: var(--color-primary);
+  font-size: 34px;
+  font-weight: 700;
+  }
+  .subscriptionTable table tr:nth-child(2) td:nth-child(3) h3 {
+    margin: 0;
+    text-align: center;
+    color: var(--color-light-black);
+    font-size: 16px;
+    font-weight: 600;
+    }
+.subscriptionTable table tr:nth-child(3) td:nth-child(2) {
+  border-left:1px solid var(--color-black);
+  border-right:1px solid var(--color-black);
+  text-align: center;
+  background-color: var(--color-sharp-gray);
+}
+.subscriptionTable table tr:nth-child(3) td:nth-child(2) span {
+  position: relative;
+  top:-22px;
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--color-primary);
+}
+.subscriptionTable table tr:nth-child(3) td:nth-child(3) {
+  border-right:1px solid var(--color-black);
+  background-color: var(--color-sharp-gray);
+  text-align: center;
+}
+.subscriptionTable table tr:nth-child(3) td:nth-child(3) button{
+  white-space: nowrap;
+  padding:8px;
+  border-radius: 12px;
+  border: none;
+  background-color: var(--color-primary);
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--color-white);
+  position: relative;
+  top:-22px;
+}
+.subscriptionTable table tr:nth-child(3) th {
+  border-top:1px solid var(--color-black);
+}
+.subscriptionTable table b {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--color-black);
+}
+.subscriptionTable table td {
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--color-black);
+  padding: 15px 20px;
+}
+.descriptionRow {
+  display: none;
+  background-color: var(--color-white) !important;
+}
+
+.expandButton {
+  cursor: pointer;
+  display: none;
+  width: 15px;
+  height: 15px;
+}
+
+.expandData span {
+  background: var(--color-navbar-bg);
+  width: 25px;
+  height: 25px;
+  min-width: 25px;
+  border-radius: 4px;
+  color: var(--color-white);
+  display: none;
+  align-items: center;
+  justify-content: center;
+}
+@media only screen and (max-width:576px) {
+  .helpmyMain {
+    padding: 10px;
+  }
+  .tableContentHide {
+    display: none;
+}
+
+.expandButton {
+    display: inline;
+}
+
+.expandData {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.expandData span {
+    display: flex;
+}
+}
+@media only screen and (max-width:992px) {
+  .subscriptionTable {
+    overflow: scroll;
+}
+/* .subscriptionTable table {
+  white-space: nowrap;
+} */
+}

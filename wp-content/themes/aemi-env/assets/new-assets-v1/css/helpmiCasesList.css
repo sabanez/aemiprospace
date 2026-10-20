@@ -1,0 +1,333 @@
+.helpmySection {
+  background-color: var(--color-sidebar-bg);
+  word-break: break-word;
+  margin-top: 30px;
+}
+.headerContent h1 {
+  margin: 0;
+  font-size: 36px;
+  font-weight: 700;
+  letter-spacing: 0em;
+  color: var(--color-black);
+}
+.headerContent p {
+  margin-top: 10px;
+}
+.helpmyCard {
+  background-color: var(--color-white);
+  border: 1px solid var(--color-border);
+  border-radius: 12px;
+  margin-top: 25px;
+}
+.cardHeader {
+  padding: 0px 20px;
+  border-bottom: 1px solid var(--color-border);
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cardHeader ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 20px;
+}
+.cardHeader ul li {
+  list-style: none;
+}
+
+.cardHeader ul li div {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.cardHeader ul li.active div h6 {
+  font-weight: 600;
+  color: var(--color-primary);
+  margin: 0;
+  padding-bottom: 22px;
+  padding-top: 22px;
+  border-bottom: 2px solid var(--color-primary);
+  cursor: pointer;
+}
+.cardHeader ul li div h6 {
+  font-weight:600;
+  padding-bottom: 22px;
+  padding-top: 22px;
+  margin: 0;
+  cursor: pointer;
+  color: var(--color-grey);
+}
+.cardHeader ul li div span {
+  font-size: var(--font-size-standard);
+  font-weight: 600;
+  color: var(--color-white);
+  width: 23px;
+  height: 23px;
+  background-color: var(--color-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+
+.submitCase button {
+  display: flex;
+  align-items: center;
+  background-color: var(--color-secondary);
+  border: none;
+  width: 250px;
+  height: 45px;
+  border-radius: 12px;
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--color-white);
+  gap: 4px;
+  justify-content: center;
+}
+.submitCase span {
+  display: flex;
+  align-items: center;
+}
+.submitCase a {
+  text-decoration: none;
+}
+.catGory {
+  background-color: var(--color-sharp-gray);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0px;
+  gap: 18px;
+  border-radius: 12px;
+}
+.caseName table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.closePro img {
+  width: 20px;
+}
+.caseName table th,
+td {
+  font-size: var(--font-size-standard);
+  font-weight: 600;
+}
+.caseName table th {
+  font-size: var(--font-size-small);
+  font-weight: 400;
+  color: var(--color-grey);
+  padding: 1rem;
+}
+.caseName table tr {
+  border: 1px solid var(--color-border);
+  text-align: left;
+  padding: 8px;
+  border-top: none;
+  font-weight: 500;
+}
+.caseName table tr:first-child {
+  background-color: var(--color-sharp-gray);
+}
+.caseName table tr:nth-child(3) {
+  border-bottom: none;
+}
+.beingPro {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding-left: 15px;
+  color: var(--color-success);
+}
+.beingPro img {
+  margin-right: 5px;
+}
+.closePro {
+  display: flex;
+  background: var(--color-danger);
+  align-items: center;
+  justify-content: space-evenly;
+  border-radius: 50px;
+  height: 22px;
+  padding: 16px 20px;
+  color: var(--color-white);
+  text-decoration: none;
+}
+.closePro h6 {
+  font-weight: 500;
+}
+.resultRea {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding-left: 15px;
+  color: var(--color-secondary);
+}
+.resultRea img {
+  margin-right: 5px;
+}
+.close-case td:first-child {
+  color: var(--color-grey);
+  padding: 1.4rem;
+}
+.close-case td:nth-child(2) {
+  color: var(--color-purple);
+  padding: 1.4rem;
+}
+.close-case td:nth-child(3) {
+  color: var(--color-light-black);
+  padding: 1.4rem;
+}
+.close-case td:nth-child(5) {
+  color: var(--color-grey);
+  padding: 1.4rem;
+}
+.close-case td:nth-child(6) {
+  color: var(--color-light-black);
+  padding: 1.4rem;
+}
+.close-case td:nth-child(7) {
+  color: var(--color-grey);
+  padding: 1.4rem;
+}
+.caseName table tr:nth-child(2) td:first-child {
+  color: var(--color-grey);
+  padding: 1.4rem;
+  font-weight: 500;
+}
+.caseName table tr:nth-child(2) td:nth-child(2) {
+  color: var(--color-primary) !important;
+  padding: 1.4rem;
+}
+.caseName table tr:nth-child(2) td:nth-child(3) {
+  color: var(--color-light-black);
+  padding: 1.4rem;
+  font-weight: 500;
+}
+.caseName table tr:nth-child(2) td:nth-child(5) {
+  color: var(--color-grey);
+  padding: 1.4rem;
+  font-weight: 500;
+}
+.caseName table tr:nth-child(2) td:nth-child(6) {
+  color: var(--color-primary);
+  padding: 1.4rem;
+  font-weight: 600;
+}
+.caseName table tr:nth-child(2) td:nth-child(7) {
+  color: var(--color-grey);
+  padding: 1.4rem;
+  font-weight: 500;
+}
+.caseName table tr:nth-child(3) td:first-child {
+  color: var(--color-grey);
+  padding: 1.4rem;
+  font-weight: 500;
+}
+.caseName table tr:nth-child(3) td:nth-child(2) {
+  color: var(--color-primary);
+  padding: 1.4rem;
+}
+.caseName table tr:nth-child(3) td:nth-child(3) {
+  color: var(--color-light-black);
+  padding: 1.4rem;
+  font-weight: 500;
+}
+.caseName table tr:nth-child(3) td:nth-child(5) {
+  color: var(--color-grey);
+  padding: 1.4rem;
+  font-weight: 500;
+}
+.caseName table tr:nth-child(3) td:nth-child(6) {
+  color: var(--color-light-black);
+  padding: 1.4rem;
+  color: var(--color-primary);
+}
+.caseName table tr:nth-child(3) td:nth-child(7) {
+  color: var(--color-grey);
+  padding: 1.4rem;
+  font-weight: 500;
+}
+
+.open-case {
+  display: table-row;
+}
+
+.close-case {
+  display: none;
+}
+
+.submit-row {
+  background-color: var(--color-sharp-gray);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 0px;
+  gap: 18px;
+}
+
+@media screen and (max-width: 768px) {
+  .helpmySection {
+    word-break: normal;
+    padding: 0;
+  }
+  .helpmyCard {
+    overflow: scroll;
+    white-space: nowrap;
+  }
+  .cardHeader ul {
+    padding: 0px 68px 0px 0px;
+  }
+  .caseName table th {
+    font-size: 15px;
+  }
+  .caseName table th,
+  td {
+    font-size: 15px;
+  }
+  .cardHeader ul li:first-child div h3 {
+    font-size: 15px;
+  }
+  .cardHeader ul li:nth-child(2) div h3 {
+    font-size: 15px;
+  }
+  .cardHeader ul li:first-child div span {
+    font-size: 13px;
+    width: 17px;
+    height: 16px;
+  }
+  .cardHeader ul li:nth-child(2) div span {
+    font-size: 13px;
+    width: 17px;
+    height: 16px;
+  }
+  .closePro {
+    height: 22px;
+    gap: 4px;
+    padding: 16px 8px;
+  }
+  .resultRea {
+    height: 22px;
+    gap: 4px;
+    padding: 16px 8px;
+  }
+  .resultRea h3 {
+    font-size: 11px;
+  }
+  .submitCase button {
+    width: 200px;
+    height: 45px;
+    border-radius: 12px;
+    font-size: 15px;
+  }
+  .cardHeader {
+    margin-right: 70px;
+  }
+}

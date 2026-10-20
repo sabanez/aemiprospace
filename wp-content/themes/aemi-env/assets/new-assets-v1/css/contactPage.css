@@ -1,0 +1,82 @@
+.contactPage {
+  margin-top: 30px;
+}
+.contactPage .contact-section{
+padding: 0 60px;
+}
+.contactPage .contact-container{
+  padding: 0 10px;
+}
+.contactPage .content {
+  /* margin-top: 50px; */
+  margin: 50px -10px 0 -10px;
+  /* gap: 100px; */
+}
+.contactPage .content .leftHolder {
+  flex-direction: column;
+  align-items: flex-start;
+  width: 40%;
+  padding: 0 10px;
+}
+.contactPage .content .leftHolder .inlineItem {
+  margin-bottom: 30px;
+}
+.contactPage .content .leftHolder .inlineItem span {
+  gap: 10px
+}
+.contactPage .content .leftHolder .inlineItem span.social a {
+  background: #d9d9d9;
+  padding: 7px;
+  border-radius: 12px;
+  width: 35px;
+  height: 35px;
+}
+.contactPage .content .leftHolder .inlineItem .title {
+  color: var(--color-light-black);
+  margin-bottom: 10px;
+}
+.contactPage .content .leftHolder .inlineItem .tel {
+  color: var(--color-primary);
+  font-weight: 800;
+}
+.contactPage .content .leftHolder .inlineItem h4 {
+  font-weight: 800;
+}
+.contactPage .content .leftHolder .inlineItem img {
+  width: 22px;
+  object-fit: cover;
+}
+.contactPage .content .rightHolder{
+  width: 60%;
+  padding: 0 10px;
+}
+.contactPage .content .rightHolder .contactForm {
+  height: max-content;
+  width: 100%;
+}
+.contactPage .content .rightHolder .contactForm .callout{
+  color: var(--color-grey);
+  font-size: var(--font-size-smaller);
+  margin-left: 10px;
+}
+
+@media screen and (max-width:768px) {
+  .contactPage .content{
+    flex-direction: column-reverse;
+    gap: 20px;
+  }
+  .contactPage .contact-section{
+    padding: 0 30px;
+  }
+  .contactPage .content .leftHolder{
+    width: 100%;
+  }
+  .contactPage .content .rightHolder{
+    width: 100%;
+  }
+}
+@media screen and (max-width:576px) {
+  .contactPage .contact-section{
+    padding: 0 10px;
+  }
+}

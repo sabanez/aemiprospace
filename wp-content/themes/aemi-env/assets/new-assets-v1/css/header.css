@@ -1,0 +1,415 @@
+header {
+  background-color: var(--color-navbar-bg);
+  position: sticky;
+  width: 100vw;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  padding: 5px 0;
+}
+header .holder .leftHolder {
+  gap: 44px;
+}
+header .holder .leftHolder .logo::after {
+  content: "";
+  height: 51px;
+  margin-left: 23px;
+  position: absolute;
+  border: 1px solid var(--color-border-dark);
+}
+header .holder .leftHolder .logo img {
+  width: 100px;
+  height: 50px;
+}
+header .holder .rightHolder .menuBar {
+  display: none;
+}
+header .mobileProfile {
+  display: none;
+}
+header .menuHolder .mobileProfileMenu {
+  flex-direction: column;
+}
+header .holder .leftHolder .menuHolder .closeSidebar #closeIcon {
+  fill: var(--color-white);
+  width: 25px;
+  height: 25px;
+}
+header .menuHolder .bottomNavMenu {
+  list-style: none;
+  width: 100%;
+  display: none;
+  flex-direction: column;
+  gap: 28px;
+}
+header .menuHolder .bottomNavMenu li a {
+  text-decoration: none;
+  color: var(--color-white);
+  gap: 8px;
+  font-size: 17px;
+  font-weight: 500;
+  transition-duration: 0.3s;
+}
+header .menuHolder .bottomNavMenu li a svg {
+  width: 25px;
+  height: 25px;
+}
+header .menuHolder .bottomNavMenu li:hover a {
+  color: var(--color-primary);
+  transition-duration: 0.3s;
+}
+header .menuHolder .bottomNavMenu li:hover a svg {
+  transition-duration: 0.3s;
+  color: var(--color-primary);
+}
+header .profileDropdown .menuGap {
+  gap: 12px;
+}
+header
+  .holder
+  .rightHolder
+  .iconMenu
+  .searchHolder
+  .searchInput
+  input::placeholder {
+  color: var(--color-medium-dark-blue) !important;
+}
+@media only screen and (max-width: 991px) {
+  header .holder .leftHolder .menuHolder {
+    display: none;
+  }
+  header .holder .rightHolder .menuBar {
+    display: block;
+    margin-left: 10px;
+  }
+  header .holder .rightHolder .menuBar svg {
+    width: 30px;
+    height: 30px;
+  }
+  header .leftHolder .menuHolder {
+    position: fixed;
+    right: 0;
+    height: 100vh;
+    width: 300px;
+    z-index: 555555;
+    background: var(--main-body-bg);
+    top: 0;
+  }
+  header .leftHolder .menuHolder.showBar {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 10px 15px 30px 25px;
+    background-color: var(--color-dark-blue);
+  }
+  header .leftHolder .menuHolder.showBar .mobileNavMenu {
+    display: flex;
+    flex-direction: column;
+    align-items: normal;
+    margin-top: 50px;
+  }
+  header .mobileProfile {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 15px;
+    width: 100%;
+  }
+  header .mobileProfile .closeSidebar {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    background-color: var(--color-white);
+  }
+  header .mobileProfile .closeSidebar svg path {
+    fill: var(--color-primary);
+  }
+  header .menuHolder .bottomNavMenu {
+    display: flex;
+  }
+}
+
+/* Left Content */
+header .holder .leftHolder .menuHolder ul.menuDropdown {
+  display: none;
+}
+header .holder .leftHolder .menuHolder ul.menuDropdown li .inline {
+  gap: 8px;
+  font-size: 17px;
+  font-weight: 500;
+  color: var(--color-white);
+}
+header .holder .leftHolder .menuHolder ul.menuDropdown li:hover .inline {
+  color: var(--color-primary);
+}
+header .holder .leftHolder .menuHolder ul.menuDropdown li .inline svg {
+  width: 25px;
+  height: 25px;
+}
+header .holder .leftHolder .menuHolder nav ul {
+  color: var(--color-white);
+  font-size: 17px;
+  font-weight: 500;
+  padding-left: 0;
+  margin: 0;
+  gap: 28px;
+}
+header .holder .leftHolder .menuHolder nav ul li {
+  cursor: pointer;
+  list-style: none;
+  gap: 8px;
+  height: 100%;
+  align-items: flex-start;
+}
+header .holder .leftHolder .menuHolder nav ul li a {
+  color: var(--color-white);
+}
+header .holder .leftHolder .menuHolder nav ul li:hover a,
+header .holder .leftHolder .menuHolder nav ul li.active a {
+  color: var(--color-primary);
+}
+header .holder .leftHolder .menuHolder nav ul li a .inline {
+  gap: 12px;
+  text-wrap: nowrap;
+}
+header .holder .leftHolder .menuHolder nav .mobileProfileMenu {
+  display: none;
+}
+header .holder .leftHolder .menuHolder nav .mobileProfileMenu img {
+  width: 26px;
+  height: 26px;
+}
+header .holder .leftHolder .menuHolder nav ul li:hover a .inline svg path,
+header .holder .leftHolder .menuHolder nav ul li.active a .inline svg path {
+  fill: var(--color-primary);
+}
+
+/* Right Content */
+header .holder .rightHolder {
+  justify-content: flex-end;
+}
+header .holder .rightHolder .iconMenu {
+  gap: 30px;
+  list-style: none;
+  padding-left: 0;
+  padding-right: 20px;
+  margin: 8px 0;
+  overflow: hidden;
+}
+header .holder .rightHolder .iconMenu li svg {
+  width: 20px;
+  height: 20px;
+}
+header .holder .rightHolder .iconMenu li:hover svg {
+  fill: var(--color-primary);
+}
+header .holder .rightHolder .iconMenu .searchHolder {
+  opacity: 0;
+  visibility: hidden;
+  margin-right: -200px;
+  transition: all 0.5s ease-in-out;
+}
+
+header .holder .rightHolder .iconMenu .searchHolder.visible {
+  opacity: 1;
+  margin-right: 0;
+  visibility: visible;
+  transition: all 0.5s ease-in-out;
+}
+
+header .holder .rightHolder .iconMenu .searchHolder.visible .searchInput {
+  border-radius: 0;
+  height: 55px;
+  padding: 12px 25px;
+}
+header .holder .rightHolder .iconMenu .searchHolder {
+  margin-right: 0;
+  transition-duration: 0;
+}
+header .holder .rightHolder .iconMenu .searchHolder.visible {
+  transition-duration: 0;
+}
+
+@media screen and (max-width: 576px) {
+  header .holder .rightHolder .iconMenu .searchHolder.visible {
+    position: absolute;
+    left: 0px;
+    top: 64px;
+    width: 100vw;
+  }
+}
+
+header .holder .rightHolder .iconMenu .searchHolder .searchInput {
+  background: var(--color-white);
+  padding: 12px 18px;
+  border-radius: var(--radius-large);
+  height: 45px;
+  width: auto;
+}
+header .holder .rightHolder .iconMenu .searchHolder .searchInput img {
+  width: 23px;
+  height: 20px;
+}
+header .holder .rightHolder .iconMenu .searchHolder .searchInput input {
+  background: none;
+  border: none;
+  outline: none;
+  margin-left: 4px;
+  color: var(--color-black);
+  font-size: var(--font-size-small);
+  font-weight: 400;
+}
+header
+  .holder
+  .rightHolder
+  .iconMenu
+  .searchHolder
+  .searchInput
+  input::placeholder {
+  color: var(--color-white);
+  opacity: 1;
+}
+
+header .holder .rightHolder .profileMenu {
+  margin-left: auto;
+  position: relative;
+  display: inline-block;
+}
+@media only screen and (max-width: 991px) {
+  header .holder .leftHolder .logo::after {
+    display: none;
+  }
+  header .holder .rightHolder .profileMenu {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    padding: 0;
+  }
+  header .holder .rightHolder .profileMenu .profile {
+    display: none;
+  }
+  header .holder .leftHolder .menuHolder nav .mobileProfileMenu {
+    display: block;
+  }
+}
+
+header .holder .rightHolder .profileMenu .profile {
+  border-radius: 28px;
+  padding-right: 24px;
+}
+header .holder .rightHolder .profileMenu .profile::before {
+  position: absolute;
+  content: "";
+  height: 51px;
+  border: 1px solid var(--color-border-dark);
+}
+header .holder .rightHolder .profileMenu .profile .profileImg {
+  width: 45px;
+  height: 45px;
+  margin-left: 25px;
+}
+
+@media (min-width: 991px) and (max-width: 1340px) {
+  header .holder .rightHolder .profileMenu .profile .profileImg {
+    width: 40px;
+    height: 40px;
+  }
+}
+header .holder .rightHolder .profileMenu .profile .profileInfo {
+  color: var(--color-white);
+  margin: 0;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+header .holder .rightHolder .profileMenu .profile .profileInfo p {
+  font-weight: 600 !important;
+  text-wrap: nowrap;
+}
+
+@media (min-width: 991px) and (max-width: 1340px) {
+  header .holder .rightHolder .profileMenu .profile .profileInfo {
+    color: var(--color-white);
+    font-size: 16px;
+    font-weight: 600;
+    margin: 0;
+    padding-left: 10px;
+  }
+}
+header .holder .rightHolder .profileMenu .profile .profileInfo .profileLevel {
+  gap: 2px;
+  color: var(--color-light-green);
+  font-size: 14px;
+  margin-top: 2px;
+  font-weight: 600;
+}
+header
+  .holder
+  .rightHolder
+  .profileMenu
+  .profile
+  .profileInfo
+  .profileLevel
+  img {
+  height: 14px;
+  width: 14px;
+  margin-left: 0;
+}
+
+header .holder .rightHolder .profileMenu .profile .dropdownIcon {
+  padding-left: 10px;
+}
+header .holder .rightHolder .profileMenu .profile .profileDropdown {
+  display: none;
+  position: absolute;
+  background: var(--color-white);
+  z-index: 10;
+  top: 128%;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 30px 21px;
+  border-radius: var(--radius-standard);
+  padding: 10px;
+}
+header .holder .rightHolder .profileMenu .profile .profileDropdown ul li {
+  border-bottom: 1px solid var(--color-border);
+  font-size: 17px;
+  font-weight: 600;
+  padding: 10px 12px;
+  color: var(--color-black);
+  list-style: none;
+  transition-duration: 0.2s;
+}
+header .holder .rightHolder .profileMenu .profile .profileDropdown ul li:hover {
+  color: var(--color-primary);
+  transition-duration: 0.2s;
+}
+header .holder .rightHolder .profileMenu .profile .profileDropdown ul li a {
+  color: var(--color-light);
+  gap: 30px;
+}
+header .holder .rightHolder .profileMenu .profile .profileDropdown ul li a svg {
+  width: 22px;
+  height: 22px;
+}
+header
+  .holder
+  .rightHolder
+  .profileMenu
+  .profile
+  .profileDropdown
+  ul
+  li:last-child {
+  border: none;
+}
+header .holder .rightHolder .profileMenu .profile .profileDropdown ul::before {
+  border-bottom: 10px solid var(--color-white);
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  content: "";
+  height: 0;
+  position: absolute;
+  right: 20px;
+  top: -10px;
+  width: 0;
+}

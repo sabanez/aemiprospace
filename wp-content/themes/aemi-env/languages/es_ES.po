@@ -1,0 +1,1170 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: es_ES\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.4.1\n"
+
+msgid "Custom content suggestions"
+msgstr "Sugerencias de contenido personalizado"
+
+msgid "See more recommendations"
+msgstr "Ver más recomendaciones"
+
+msgid "See publications"
+msgstr "Ver publicaciones"
+
+msgid "Microimmunotherapy"
+msgstr "Microinmunoterapia"
+
+msgid "Where can microimmunotherapy intervene?"
+msgstr "¿Dónde puede intervenir la microinmunoterapia?"
+
+msgid "Take a look at some of the testimonials submitted by our users below."
+msgstr "Eche un vistazo a algunos de los testimonios enviados por nuestros usuarios a continuación."
+
+msgid "PRO"
+msgstr "Socio"
+
+msgid "Views"
+msgstr "Vistas"
+
+msgid "views"
+msgstr "vistas"
+
+msgid "pro"
+msgstr "socio"
+
+msgid "Visualized"
+msgstr "Visualizado"
+
+msgid "visualized"
+msgstr "visualizado"
+
+msgid "Icon"
+msgstr "Icono"
+
+msgid "Competences"
+msgstr "Competencias"
+
+msgid "Publication date"
+msgstr "Fecha de publicación"
+
+msgid "Total views"
+msgstr "Vistas totales"
+
+msgid "Related content"
+msgstr "Contenido relacionado"
+
+msgid "Continue reading"
+msgstr "Sigue leyendo"
+
+msgid "minutes"
+msgstr "minutos"
+
+msgid "minute"
+msgstr "minuto"
+
+msgid "Estimated reading time"
+msgstr "Tiempo estimado de lectura"
+
+msgid "Content information"
+msgstr "Información de contenido"
+
+msgid "Reading time"
+msgstr "Tiempo de leer"
+
+msgid "Quick access navigation"
+msgstr "Navegación de acceso rápido"
+
+msgid "All rights reserved."
+msgstr "Reservados todos los derechos."
+
+msgid "Write what you are looking for..."
+msgstr "Escribe lo que buscas..."
+
+msgid "Go to my account"
+msgstr "Ir a mi cuenta"
+
+msgid "My account"
+msgstr "Mi cuenta"
+
+msgid "Go to my payments"
+msgstr "Ir a mis pagos"
+
+msgid "My payments"
+msgstr "Mis pagos"
+
+msgid "Logout"
+msgstr "Cerrar sesión"
+
+#: functions.php
+msgid "Menu"
+msgstr "Menu"
+
+msgid "Still not registered?"
+msgstr "¿Aún no estás registrado?"
+
+msgid "Registration for this space is completely free and without obligation.<br />It will allow you to access various content and services in just a few clicks!"
+msgstr "El registro en este espacio es totalmente gratuito y sin compromiso.<br />¡Te permitirá acceder a diversos contenidos y servicios con tan solo unos clics!"
+
+msgid "Register"
+msgstr "Registro"
+
+msgid "Do you have an account?"
+msgstr "¿Tiene usted una cuenta?"
+
+msgid "Log in to access the contenido collection"
+msgstr "Inicie sesión para acceder a la colección de contenido"
+
+msgid "Complete the following form to create an account:"
+msgstr "Complete el siguiente formulario para crear una cuenta:"
+
+msgid "Or"
+msgstr "O"
+
+msgid "Go to registration"
+msgstr "Ir a registro"
+
+msgid "Go to login"
+msgstr "Ir a iniciar sesión"
+
+msgid "Go to login screen"
+msgstr "Ir a la pantalla de inicio de sesión"
+
+msgid "Write your e-mail"
+msgstr "Escriba su correo electrónico"
+
+msgid "Write your password"
+msgstr "Escribe tu contraseña"
+
+#: core/register-custom-post-type/posts.php
+msgid "Exclusive content for subscribers:"
+msgstr "Contenido exclusivo para suscriptores:"
+
+#: core/register-custom-post-type/testimonials.php
+msgid "Extra options"
+msgstr "Opciones adicionales"
+
+msgid "Text below name:"
+msgstr "Texto debajo del nombre:"
+
+msgid "Ex: CEO"
+msgstr "Ej: Director ejecutivo"
+
+msgid "Testimonials"
+msgstr "Testimonios"
+
+msgid "Testimonial"
+msgstr "Testimonial"
+
+msgid "Testimonial archives"
+msgstr "Archivos de testimonios"
+
+msgid "Testimonial attributes"
+msgstr "Atributos testimoniales"
+
+msgid "Parent testimonial"
+msgstr "Testimonio de los padres"
+
+msgid "All testimonials"
+msgstr "Todos los testimonios"
+
+msgid "Add New testimonial"
+msgstr "Agregar nuevo testimonio"
+
+msgid "Add New"
+msgstr "Agregar nuevo"
+
+msgid "New testimonial"
+msgstr "Nuevo testimonio"
+
+msgid "Edit testimonial"
+msgstr "Editar testimonio"
+
+msgid "Update testimonial"
+msgstr "Actualizar testimonio"
+
+msgid "View testimonial"
+msgstr "Ver testimonio"
+
+msgid "View testimonials"
+msgstr "Ver testimonios"
+
+msgid "Search testimonial"
+msgstr "Buscar testimonio"
+
+msgid "Not found"
+msgstr "No encontrado"
+
+msgid "Not found in Trash"
+msgstr "No encontrado en la Papelera"
+
+msgid "Author's image"
+msgstr "Imagen del autor"
+
+msgid "Set Author's image"
+msgstr "Establecer la imagen del autor"
+
+msgid "Remove Author's image"
+msgstr "Quitar la imagen del autor"
+
+msgid "Use as Author's image"
+msgstr "Usar como imagen del autor"
+
+msgid "Insert into testimonial"
+msgstr "Insertar en testimonio"
+
+msgid "Uploaded to this testimonial"
+msgstr "Subido a este testimonio"
+
+msgid "Testimonials list"
+msgstr "Lista de testimonios"
+
+msgid "Testimonials list navigation"
+msgstr "Navegación de la lista de testimonios"
+
+msgid "Filter testimonials list"
+msgstr "Filtrar lista de testimonios"
+
+#: core/register-custom-taxonomies/category.php
+msgid "Change thumbnail"
+msgstr "Cambiar miniatura"
+
+msgid "Use this image"
+msgstr "Usa esta imagen"
+
+msgid "Content"
+msgstr "Contenido"
+
+msgid "Thumbnail"
+msgstr "Miniatura"
+
+msgid "Select thumbnail"
+msgstr "Seleccionar miniatura"
+
+#: core/register-custom-taxonomies/content-level.php
+msgid "Content levels"
+msgstr "Niveles de contenido"
+
+msgid "Content level"
+msgstr "Nivel de contenido"
+
+msgid "All content levels"
+msgstr "Todos los niveles de contenido"
+
+msgid "Parent level"
+msgstr "Nivel de padres"
+
+msgid "New content level Name"
+msgstr "Nuevo nivel de contenido Nombre"
+
+msgid "Add New content level"
+msgstr "Agregar nuevo nivel de contenido"
+
+msgid "Edit content level"
+msgstr "Editar nivel de contenido"
+
+msgid "Update content level"
+msgstr "Actualizar nivel de contenido"
+
+msgid "View content level"
+msgstr "Ver nivel de contenido"
+
+msgid "Separate content levels with commas"
+msgstr "Separe los niveles de contenido con comas"
+
+msgid "Add or remove content level"
+msgstr "Agregar o quitar nivel de contenido"
+
+msgid "Popular content levels"
+msgstr "Niveles de contenido populares"
+
+msgid "Search content levels"
+msgstr "Buscar niveles de contenido"
+
+msgid "Not Found"
+msgstr "No encontrado"
+
+msgid "No content levels"
+msgstr "Sin niveles de contenido"
+
+msgid "Content levels list"
+msgstr "Lista de niveles de contenido"
+
+msgid "Content levels list navigation"
+msgstr "Navegación por la lista de niveles de contenido"
+
+#: core/register-custom-taxonomies/content-type.php
+msgid "Content types"
+msgstr "Tipos de contenido"
+
+msgid "Content type"
+msgstr "Tipo de contenido"
+
+msgid "All content types"
+msgstr "Todos los tipos de contenido"
+
+msgid "New content type Name"
+msgstr "Nuevo tipo de contenido Nombre"
+
+msgid "Add New content type"
+msgstr "Agregar nuevo tipo de contenido"
+
+msgid "Edit content type"
+msgstr "Editar tipo de contenido"
+
+msgid "Update content type"
+msgstr "Actualizar tipo de contenido"
+
+msgid "View content type"
+msgstr "Ver tipo de contenido"
+
+msgid "Separate content types with commas"
+msgstr "Separe los tipos de contenido con comas"
+
+msgid "Add or remove content type"
+msgstr "Agregar o quitar tipo de contenido"
+
+msgid "Popular content types"
+msgstr "Tipos de contenido populares"
+
+msgid "Search content types"
+msgstr "Tipos de contenido de búsqueda"
+
+msgid "No content types"
+msgstr "Sin tipos de contenido"
+
+msgid "Content types list"
+msgstr "Lista de tipos de contenido"
+
+msgid "Content types list navigation"
+msgstr "Navegación por la lista de tipos de contenido"
+
+msgid "Add more"
+msgstr "Añadir más"
+
+msgid "Title"
+msgstr "Título"
+
+msgid "Image"
+msgstr "Imagen"
+
+msgid "Change image"
+msgstr "Cambiar imagen"
+
+msgid "Button text"
+msgstr "Botón de texto"
+
+msgid "Button link"
+msgstr "Enlace de botón"
+
+msgid "Español"
+msgstr "Español"
+
+msgid "Español de México"
+msgstr "Español de México"
+
+msgid "Português do Brasil"
+msgstr "Portugués de Brasil"
+
+msgid "English (United States)"
+msgstr "Inglés (Estados Unidos)"
+
+msgid "General interest"
+msgstr "Interés general"
+
+msgid "Concrete case"
+msgstr "Caso concreto"
+
+msgid "Both"
+msgstr "Ambos"
+
+msgid "Please select an option:"
+msgstr "Por favor selecciona una opción:"
+
+msgid "Next step"
+msgstr "Próximo paso"
+
+msgid "Step"
+msgstr "Paso"
+
+msgid "First access messages"
+msgstr "Mensajes de primer acceso"
+
+msgid "Paso 1"
+msgstr "Etapa 1"
+
+msgid "Paso 2"
+msgstr "Etapa 2"
+
+msgid "Paso 3"
+msgstr "Etapa 3"
+
+msgid "Paso 4"
+msgstr "Etapa 4"
+
+msgid "Paso 5"
+msgstr "Etapa 5"
+
+msgid "Paso 6"
+msgstr "Etapa 6"
+
+msgid "Paso 7"
+msgstr "Etapa 7"
+
+msgid "Paso 8"
+msgstr "Etapa 8"
+
+msgid "Paso 9"
+msgstr "Etapa 9"
+
+msgid "Paso 10"
+msgstr "Etapa 10"
+
+msgid "Profile"
+msgstr "Perfil"
+
+msgid "Name"
+msgstr "Nombre"
+
+msgid "Subtitle"
+msgstr "Subtitular"
+
+msgid "Custom title about interests"
+msgstr "Título personalizado sobre intereses"
+
+msgid "Use these small code snippets to return information"
+msgstr "Utilice estos pequeños fragmentos de código para devolver información"
+
+msgid "Returns the username"
+msgstr "Devuelve el nombre de usuario"
+
+msgid "Save"
+msgstr "Guardar"
+
+msgid "Go to Professional Space"
+msgstr "Ir a Espacio Profesional"
+
+msgid "Current stage of first access"
+msgstr "Etapa actual de primer acceso"
+
+msgid "Concluded"
+msgstr "Concluido"
+
+msgid "Type of interest"
+msgstr "Tipo de interés"
+
+msgid "Interest"
+msgstr "Interés"
+
+msgid "Favorites"
+msgstr "Favoritos"
+
+msgid "No se pudo completar la solicitud, inténtalo de nuevo."
+msgstr "Não foi possível concluir a solicitação, tente novamente!"
+
+msgid "No content bookmarked"
+msgstr "No hay contenido marcado"
+
+msgid "Discover more"
+msgstr "Descubrir más"
+
+msgid "Return"
+msgstr "Regresar"
+
+msgid "Search results"
+msgstr "Resultados de la búsqueda"
+
+msgid "You searched for"
+msgstr "Has buscado por"
+
+msgid "Check the search results:"
+msgstr "Consulta los resultados de la búsqueda:"
+
+msgid "No results found. Do a new search"
+msgstr "No se han encontrado resultados. hacer una nueva búsqueda"
+
+msgid "Contact page information"
+msgstr "Información de la página de contacto"
+
+msgid "Phone"
+msgstr "Teléfono"
+
+msgid "Form short code"
+msgstr "Formar código corto"
+
+msgid "Map short code (Iframe)"
+msgstr "Mapa de código corto (Iframe)"
+
+msgid "Key themes"
+msgstr "Temas clave"
+
+msgid "Score limit"
+msgstr "Límite de puntuación"
+
+msgid "This is the maximum limit a user can reach when reading content related to this subclass."
+msgstr "Este es el límite máximo que un usuario puede alcanzar al leer contenido relacionado con esta subclase."
+
+msgid "Start level at"
+msgstr "Nivel de inicio en"
+
+msgid "This is the parameter used to identify how many points the user will be at that level."
+msgstr "Este es el parámetro utilizado para identificar cuántos puntos estará el usuario en ese nivel."
+
+msgid "Configure an example:"
+msgstr "Configurar un ejemplo:"
+
+msgid "Introductory starts from 0 points."
+msgstr "Introducción comienza desde 0 puntos."
+
+msgid "Intermediate starts from 700 points."
+msgstr "Intermedio comienza desde 700 puntos."
+
+msgid "Advanced starts from 1300 points."
+msgstr "Avanzado comienza desde 1300 puntos."
+
+msgid "Competencies / Skills"
+msgstr "Competencias / Skills"
+
+msgid "Add the scores the user will receive when viewing the content and the content level:"
+msgstr "Agregue los puntajes que recibirá el usuario al ver el contenido y el nivel del contenido:"
+
+msgid "View %s Score"
+msgstr "Ver puntuación de %s"
+
+msgid "Score summary"
+msgstr "Resumen de puntuación"
+
+msgid "Scoring by level and sub-rating"
+msgstr "Puntos obtenidos por nivel"
+
+msgid "Content scoring information"
+msgstr "Información de puntuación de contenido"
+
+msgid "Level ordering (Priority)"
+msgstr "Orden de niveles (Prioridad)"
+
+msgid "This parameter is used to identify the order of the levels."
+msgstr "Este parámetro se utiliza para identificar el orden de los niveles."
+
+msgid "Score information"
+msgstr "Información de puntuación"
+
+msgid "Points added manually"
+msgstr "Puntos agregados manualmente"
+
+msgid "Points for viewing content"
+msgstr "Puntos por ver contenido"
+
+msgid "Total score"
+msgstr "Puntaje total"
+
+msgid "Current level"
+msgstr "Nivel actual"
+
+msgid "When saving manual points, the user will level up:"
+msgstr "Al guardar puntos manuales, el usuario subirá de nivel:"
+
+msgid "No data at the moment."
+msgstr "Sin datos por el momento."
+
+msgid "Max level score"
+msgstr "Puntuación de nivel máximo"
+
+msgid "Scoring with point limit"
+msgstr "Puntuación con límite de puntos"
+
+msgid "Scoring without point limit"
+msgstr "Puntuación sin límite de puntos"
+
+msgid "Skills"
+msgstr "Habilidades"
+
+msgid "Score limite"
+msgstr "Límite de puntuación"
+
+msgid "View scores"
+msgstr "Ver pontuações"
+
+msgid "Updated data"
+msgstr "Datos actualizados"
+
+msgid "Oops, for some reason this page is currently unavailable!"
+msgstr "Vaya, por algún motivo, esta página no está disponible en este momento."
+
+msgid "Maybe this page has been removed from the system or you don't have access to it!"
+msgstr "¡Tal vez esta página ha sido eliminada del sistema o no tienes acceso a ella!"
+
+msgid "Back to home page"
+msgstr "Volver a la página de inicio"
+
+msgid "The user could not be upgraded to the %s level because there was not enough point content. Could upload user to %s"
+msgstr "No se pudo actualizar al usuario al nivel %s porque no había suficiente contenido de puntos. El usuario podría actualizarse a %s"
+
+msgid "Score"
+msgstr "Puntaje"
+
+msgid "Scores"
+msgstr "Puntuaciones"
+
+msgid "Limit"
+msgstr "Límite"
+
+msgid "Manual change log"
+msgstr "Registro de cambios manuales"
+
+msgid "The %s tried to change the user to level %s manually, but the desired level could not be changed. The level that could be changed was to %s"
+msgstr "%s intentó cambiar el usuario al nivel %s manualmente, pero no se pudo cambiar el nivel deseado. El nivel que se podía cambiar era a %s"
+
+msgid "%s changed the user to level %s manually."
+msgstr "%s cambió el usuario al nivel %s manualmente."
+
+msgid "No logs at the moment"
+msgstr "No hay registros en este momento"
+
+msgid "New content has been unlocked."
+msgstr "Se ha desbloqueado nuevo contenido."
+
+msgid "Congratulations you have reached a new level"
+msgstr "Felicidades has alcanzado un nuevo nivel."
+
+msgid "Continue browsing"
+msgstr "Continuar navegando"
+
+msgid "Cancel"
+msgstr "Cancelar"
+
+msgid "Confirm"
+msgstr "Confirmar"
+
+msgid "Check profile photo preview, want to make a change?"
+msgstr "Revisa la vista previa de la foto de perfil, ¿quieres hacer un cambio?"
+
+msgid "Oops, could not change the image. Try again later!"
+msgstr "Vaya, no se pudo cambiar la imagen. ¡Inténtalo de nuevo más tarde!"
+
+msgid "Profile photo changed."
+msgstr "La foto de perfil cambió."
+
+msgid "Billing address"
+msgstr "Dirección de facturación"
+
+msgid "Shipping address"
+msgstr "Dirección de envío:"
+
+msgid "You have not set up this type of address yet."
+msgstr "Aún no has configurado este tipo de dirección."
+
+msgid "Edit"
+msgstr "Editar"
+
+msgid "Add"
+msgstr "Agregar"
+
+msgid "No order has been made yet."
+msgstr "Aún no se ha realizado ningún pedido."
+
+msgid "Browse products"
+msgstr "Explorar productos"
+
+msgid "The following addresses will be used on the checkout page by default."
+msgstr "Las siguientes direcciones se utilizarán en la página de pago de forma predeterminada."
+
+msgid "Exclusive content for subscribers."
+msgstr "Contenido exclusivo para suscriptores."
+
+msgid "Unfortunately, this content is only available for PRO users.<br />Do you want to know the advantages and convert into a PRO user?"
+msgstr "Desafortunadamente, este contenido solo está disponible para usuarios Socio.<br />¿Quieres conocer las ventajas y convertirte en usuario Socio?"
+
+msgid "Back to previous screen"
+msgstr "Volver a la pantalla anterior"
+
+msgid "Yes I want to know the advantages"
+msgstr "Si quiero saber las ventajas"
+
+msgid "Level"
+msgstr "Nivel"
+
+msgid "Scoring program"
+msgstr "Programa de puntuación"
+
+msgid "points"
+msgstr "puntos"
+
+msgid "See more information"
+msgstr "Ver más información"
+
+msgid "Unable to upload your image, please upload a file up to %s."
+msgstr "No se puede cargar su imagen, cargue un archivo hasta %s."
+
+msgid "Please upload an image file in the correct format."
+msgstr "Cargue un archivo de imagen en el formato correcto."
+
+msgid "Do not display featured image on content page:"
+msgstr "No mostrar la imagen destacada en la página de contenido:"
+
+msgid "Therapeutic areas"
+msgstr "Áreas terapéuticas"
+
+msgid "Add therapeutic area"
+msgstr "Añadir área terapéutica"
+
+msgid "Edit therapeutic area"
+msgstr "Editar área terapéutica"
+
+msgid "View therapeutic areas"
+msgstr "Ver áreas terapéuticas"
+
+msgid "Search therapeutic areas"
+msgstr "Buscar áreas terapéuticas"
+
+msgid "No therapeutic areas found"
+msgstr "No se han encontrado áreas terapéuticas"
+
+msgid "No therapeutic areas found in Trash"
+msgstr "No se encontraron áreas terapéuticas en la Papelera"
+
+msgid "All therapeutic areas"
+msgstr "Todas las áreas terapéuticas"
+
+msgid "Therapeutic area"
+msgstr "Área terapéutica"
+
+msgid "tags"
+msgstr ""
+
+msgid "Tag"
+msgstr ""
+
+msgid "All tags"
+msgstr "Todas las etiquetas"
+
+msgid "New tag name"
+msgstr "Nuevo nombre de tag"
+
+msgid "Add new tag"
+msgstr "Añadir nueva tag"
+
+msgid "Edit tag"
+msgstr "Editar tag"
+
+msgid "Update tag"
+msgstr "Actualizar tag"
+
+msgid "View tag"
+msgstr "Ver tag"
+
+msgid "Separate tags with commas"
+msgstr "Separa las tags con comas"
+
+msgid "Add or remove tag"
+msgstr "Agregar o quitar tag"
+
+msgid "Choose from the most used"
+msgstr "Elige entre los más usados"
+
+msgid "Popular tags"
+msgstr "Tags populares"
+
+msgid "Search tags"
+msgstr "Buscar tags"
+
+msgid "No tags"
+msgstr "No tags"
+
+msgid "Tags list"
+msgstr "Lista de tags"
+
+msgid "Tags list navigation"
+msgstr "Navegación de la lista de tags"
+
+msgid "Related tags"
+msgstr "Tags relacionadas"
+
+msgid "Check all related tags"
+msgstr "Revisa todas las tags relacionadas"
+
+msgid "Common tags are used to display content to all users."
+msgstr "Las tags comunes se utilizan para mostrar contenido a todos los usuarios."
+
+msgid "This type of tag is not displayed for the user to select as interest because it is common content."
+msgstr "Este tipo de tag no se muestra para que el usuario la seleccione como interés porque es contenido común."
+
+msgid "This is a common tag for all users"
+msgstr "Esta es una tag común para todos los usuarios"
+
+msgid "Interests successfully updated!"
+msgstr "¡Intereses actualizados con éxito!"
+
+msgid "No content at the moment."
+msgstr "Sin contenido por el momento."
+
+msgid "Get points"
+msgstr "Obtener puntos"
+
+msgid "Points acquired successfully!"
+msgstr "¡Puntos adquiridos con éxito!"
+
+msgid "Unable to acquire points, please try again later!"
+msgstr "No se pueden adquirir puntos, inténtelo de nuevo más tarde."
+
+msgid "%s Manually changed the scores for the subcategories of the %s levels."
+msgstr "%s Cambió manualmente las puntuaciones de las subcategorías de los niveles de %s."
+
+msgid "Manual scoring"
+msgstr "Puntuación manual"
+
+msgid "Click to accumulate points to level up"
+msgstr "Pulsa para acumular puntos para subir de nivel"
+
+msgid "Unmark all"
+msgstr "Desmarca todo"
+
+msgid "Mark all"
+msgstr "Marcar todos"
+
+msgid "Skills and points associated with the content"
+msgstr "Habilidades y puntos asociados al contenido"
+
+msgid "Skill"
+msgstr "Habilidad"
+
+msgid "Points"
+msgstr "Puntos"
+
+msgid "Add skills"
+msgstr "Sumar competencias"
+
+msgid "Date"
+msgstr "Fecha"
+
+msgid "Transaction ID"
+msgstr "ID de transacción"
+
+msgid "Amount"
+msgstr "Monto"
+
+msgid "Gateway"
+msgstr ""
+
+msgid "Status"
+msgstr "Estatus"
+
+msgid "completed"
+msgstr "terminado"
+
+msgid "Current plan"
+msgstr "Plan actual"
+
+msgid "Subscription valid until"
+msgstr "Suscripción válida hasta"
+
+msgid "Cancel subscription"
+msgstr "Cancelar suscripción"
+
+msgid "There is no information on previous subscriptions."
+msgstr "No hay información sobre suscripciones anteriores."
+
+msgid "subscription"
+msgstr "suscripción"
+
+msgid "Invoice in PDF"
+msgstr "Factura en PDF"
+
+msgid "Invoice"
+msgstr "Factura"
+
+msgid "For some reason it was not possible to generate the invoice file. Please try again later or contact the site administrator."
+msgstr "Por alguna razón no fue posible generar el archivo de factura. Vuelva a intentarlo más tarde o póngase en contacto con el administrador del sitio."
+
+msgid "Subscription canceled successfully!"
+msgstr "¡Suscripción cancelada con éxito!"
+
+msgid "For some reason it was not possible to cancel your subscription. Please try again, if the error persists, please contact the site administrator to request cancellation."
+msgstr "Por alguna razón no fue posible cancelar su suscripción. Vuelva a intentarlo, si el error persiste, comuníquese con el administrador del sitio para solicitar la cancelación."
+
+msgid "Subscription automatically renewed"
+msgstr "Suscripción renovada automáticamente"
+
+msgid "Subscription successfully completed"
+msgstr "Suscripción completada con éxito"
+
+msgid "Subscription canceled on:"
+msgstr "Suscripción cancelada el:"
+
+msgid "Are you sure you want to cancel your subscription?"
+msgstr "¿Estás seguro de que deseas cancelar tu suscripción?"
+
+msgid "I don't want to end subscription"
+msgstr "No quiero terminar la suscripción"
+
+msgid "Yes, cancel subscription"
+msgstr "Sí, cancelar suscripción"
+
+msgid "From your account dashboard you can view your <a href=\"%1$s\">recent subscription</a>, manage your <a href=\"%2$s\">shipping and billing addresses</a>, and <a href=\"%3$s\">edit your password and account details</a>."
+msgstr "Desde el panel de su cuenta puede ver su <a href=\"%1$s\">suscripción reciente</a>, administrar sus <a href=\"%2$s\">direcciones de envío y facturación</a>, y <a href=\"%3$s\">edite su contraseña y los detalles de su cuenta</a>."
+
+msgid "No expiry"
+msgstr "Sin Caducidad"
+
+msgid "You are already a subscriber to the platform."
+msgstr "Ya eres suscriptor de la plataforma."
+
+msgid "Go to subscriptions page"
+msgstr "Ir a la página de suscripciones"
+
+msgid "Subscribe now"
+msgstr "Suscríbase ahora"
+
+msgid "Congratulations, your subscription was successful!"
+msgstr "¡Felicitaciones, su suscripción fue exitosa!"
+
+msgid "Go to homepage"
+msgstr "Ir a la página de inicio"
+
+msgid "View subscription plans"
+msgstr "Ver planes de suscripción"
+
+msgid "January"
+msgstr "Enero"
+
+msgid "February"
+msgstr "Febrero"
+
+msgid "March"
+msgstr "Marzo"
+
+msgid "April"
+msgstr "Abril"
+
+msgid "May"
+msgstr "Mayo"
+
+msgid "June"
+msgstr "Junio"
+
+msgid "July"
+msgstr "Julio"
+
+msgid "August"
+msgstr "Agosto"
+
+msgid "September"
+msgstr "Septiembre"
+
+msgid "October"
+msgstr "Octubre"
+
+msgid "November"
+msgstr "Noviembre"
+
+msgid "December"
+msgstr "Diciembre"
+
+msgid "january"
+msgstr "enero"
+
+msgid "february"
+msgstr "febrero"
+
+msgid "march"
+msgstr "marzo"
+
+msgid "april"
+msgstr "abril"
+
+msgid "may"
+msgstr "mayo"
+
+msgid "june"
+msgstr "junio"
+
+msgid "july"
+msgstr "julio"
+
+msgid "august"
+msgstr "agosto"
+
+msgid "september"
+msgstr "septiembre"
+
+msgid "october"
+msgstr "octubre"
+
+msgid "november"
+msgstr "noviembre"
+
+msgid "december"
+msgstr "diciembre"
+
+msgid "Mark/Unmark all"
+msgstr "Marcar/Desmarcar todo"
+
+msgid "Import users from Google Sheets"
+msgstr "Importar usuarios de Hojas de cálculo de Google"
+
+msgid "No user import yet"
+msgstr "Aún no hay importación de usuarios"
+
+msgid "Last import date:"
+msgstr "Última fecha de importación:"
+
+msgid "Run user import"
+msgstr "Ejecutar la importación de usuarios"
+
+msgid "There was an error processing your request, please try again later!"
+msgstr "Hubo un error al procesar su solicitud, inténtelo de nuevo más tarde."
+
+msgid "Users are being imported..."
+msgstr "Los usuarios están siendo importados"
+
+msgid "We were unable to process your request."
+msgstr "No pudimos procesar su solicitud."
+
+msgid "There is already an import process running, wait for the previous process to finish."
+msgstr "Ya hay un proceso de importación en ejecución, espere a que finalice el proceso anterior."
+
+msgid "Started a new user import process"
+msgstr "Comenzó un nuevo proceso de importación de usuarios"
+
+msgid "For some reason an error occurred while importing the users, the system ended the import attempt."
+msgstr "Por alguna razón ocurrió un error al importar los usuarios, el sistema finalizó el intento de importación."
+
+msgid "User import log:"
+msgstr "Registro de importación de usuario:"
+
+msgid "Imported users"
+msgstr "Usuarios importados"
+
+msgid "User ID"
+msgstr "ID de usuario"
+
+msgid "There is an import currently running, the import started at:"
+msgstr "Actualmente se está ejecutando una importación, la importación comenzó en:"
+
+msgid "The import process ended but there were no new records to be imported."
+msgstr "El proceso de importación finalizó pero no había nuevos registros para importar."
+
+msgid "Users import completed successfully!"
+msgstr "¡La importación de usuarios se completó con éxito!"
+
+msgid "Successfully imported users"
+msgstr "Usuarios importados correctamente"
+
+msgid "User import errors"
+msgstr "Errores de importación de usuarios"
+
+msgid "Application for registration on the AEMI website"
+msgstr "Solicitud de alta en la web de la AEMI"
+
+msgid "General"
+msgstr "General"
+
+msgid "Google Sheets settings are not set"
+msgstr "La configuración de Google Sheets no está configurada"
+
+msgid "Profession"
+msgstr "Profesión"
+
+msgid "Specialty"
+msgstr "Especialidad"
+
+msgid "Collegiate number"
+msgstr "Número de colegiado"
+
+msgid "Practitioner"
+msgstr "Ejerciente"
+
+msgid "Verified"
+msgstr "Verificado"
+
+msgid "Status:"
+msgstr "Estado:"
+
+msgid "School"
+msgstr "Colegio"
+
+msgid "Imported User Type"
+msgstr "Tipo de usuario importado"
+
+msgid "Access data to the AEMI members area"
+msgstr "Accede a los datos del área de miembros de la AEMI"
+
+msgid "Invalid email."
+msgstr "Email inválido."
+
+msgid "Settings ActiveCampaign"
+msgstr "Configuración ActiveCampaign"
+
+msgid "Configure how you want user actions on the system to behave with the ActiveCampaign integration."
+msgstr "Configure cómo desea que se comporten las acciones del usuario en el sistema con la integración de ActiveCampaign."
+
+msgid "User registration"
+msgstr "Registro de usuario"
+
+msgid "Plan upgrade"
+msgstr "Actualización del plan"
+
+msgid "Update user level"
+msgstr "Actualizar nivel de usuario"
+
+msgid "When registering the user"
+msgstr "Al registrar al usuario"
+
+msgid "By registering the user and being a pharmacist"
+msgstr "Al registrar al usuario y ser farmacéutico."
+
+msgid "When registering user and being a doctor"
+msgstr "Al registrarse usuario y ser médico"
+
+msgid "Which list to add the user:"
+msgstr "Que lista agregar al usuario:"
+
+msgid "Which list to remove user:"
+msgstr "Qué lista eliminar usuario:"
+
+msgid "Add tags to user:"
+msgstr "Agregar etiquetas al usuario:"
+
+msgid "Remove User Tags:"
+msgstr "Eliminar etiquetas de usuario:"
+
+msgid "When leveling up to:"
+msgstr "Al subir de nivel a:"
+
+msgid "Interests are automatically added and removed via tags whenever the user refreshes."
+msgstr "Los intereses se agregan y eliminan automáticamente a través de etiquetas cada vez que el usuario actualiza."
+
+msgid "Check below the name and tag that will be added to the user when selecting interests:"
+msgstr "Consulte a continuación el nombre y la etiqueta que se agregará al usuario al seleccionar intereses:"
+
+msgid "When selecting:"
+msgstr "Al seleccionar:"
+
+msgid "Unmarking:"
+msgstr "Desmarcar:"
+
+msgid "Plan canceled or expired"
+msgstr "Plan cancelado o vencido"
+
+msgid "User when selecting the plan:"
+msgstr "Usuario al seleccionar el plan:"
+
+msgid "Data updated successfully!"
+msgstr "¡Datos actualizados con éxito!"
+
+msgid "Please fill in the field below with the number of days you would like the inactive user marking flow to run."
+msgstr "Complete el campo a continuación con la cantidad de días que desea que se ejecute el flujo de marcado de usuario inactivo."
+
+msgid "Number of days:"
+msgstr "Número de días"
+
+msgid "Last access date notification"
+msgstr "Notificación de fecha de último acceso"

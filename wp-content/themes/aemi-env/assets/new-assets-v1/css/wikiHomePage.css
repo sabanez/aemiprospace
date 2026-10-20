@@ -1,0 +1,427 @@
+.mainSection {
+  background-color: var(--color-sidebar-bg);
+  padding: 30px 60px;
+  word-break: break-word;
+}
+.mainSection .sectionHeader h2 {
+  color: var(--color-black);
+}
+.mainSection .sectionHeader p {
+  color: var(--color-grey);
+  margin-top: 10px;
+  width: 900px;
+  max-width: 100%;
+}
+.mainSection .sectionContainer {
+  width: 100%;
+  margin-top: 35px;
+  display: flex;
+  flex-direction: row;
+  gap: 25px;
+}
+.mainSection .sectionContainer .filterResults {
+  width: 323px;
+  height: fit-content;
+  /* position: sticky; */
+  top: 20px;
+}
+.wikimiCard{
+  box-shadow: var(--card-shadow-medium);
+}
+.mainSection .sectionContainer .filterResults .filterCard {
+  padding: 18px 22px;
+  border-bottom: 1px solid var(--color-border);
+  width: 100%;
+}
+.mainSection .sectionContainer .filterResults .filterCard:last-child {
+  border-bottom: 0 !important;
+}
+.filterCard .filterName {
+  gap: 5px;
+}
+.filterCard .filterName h4{
+  font-size: var(--font-size-small);
+  font-weight: 600;
+  margin: 0px;
+  color: var(--color-grey);
+}
+.filterCard .filterSearch {
+  margin-top: 15px;
+  display: flex;
+  background: var(--color-body-bg);
+  padding: 12px 18px;
+  border-radius: 8px;
+  height: 55px;
+  border: 1px solid var(--color-border);
+  height: 45px;
+  gap: 6px;
+}
+.filterCard .filterSearch input {
+  background: none;
+  border: none;
+  outline: none;
+  color: var(--color-black);
+  font-size: var(--font-size-small);
+  font-weight: 400;
+}
+.filterCard .filterSearch input::placeholder {
+  color: var(--color-grey);
+}
+.filterCard .checkFre {
+  flex-direction: row;
+  gap: 20px;
+  margin-top: 15px;
+}
+.filterCard .selectLabels {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin-top: 15px;
+}
+.filterCard .selectLabels h3 {
+  font-size: var(--font-size-small);
+  font-weight: 600;
+  margin: 0px;
+  color: var(--color-secondary);
+  cursor: pointer;
+}
+.customLabel {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: var(--font-size-standard);
+  font-weight: 400;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  color: var(--color-light-black);
+}
+
+/* Hide the browser's default checkbox */
+.customLabel input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.customLabel .checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: var(--color-border);
+  border-radius: 6px;
+}
+
+/* On mouse-over, add a grey background color */
+.customLabel:hover input ~ .checkmark {
+  background-color: var(--color-border);
+}
+
+/* When the checkbox is checked, add a blue background */
+.customLabel input:checked ~ .checkmark {
+  background-color: var(--color-purple);
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.customLabel .checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.customLabel input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.customLabel .checkmark:after {
+  left: 10px;
+  top: 6px;
+  width: 5px;
+  height: 10px;
+  border: solid var(--color-white);
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+
+.mainSection .sectionContainer .rightContent {
+  width: calc(100% - 323px);
+}
+.cardFlex {
+  gap: 15px;
+}
+.imageLeft {
+  position: relative;
+  display: flex;
+}
+.imageLeft img:first-child {
+  width: 200px;
+}
+.play-icon-web {
+  width: 17px !important;
+  margin-right: 5px;
+  height: 17px;
+}
+.imageLeft span:nth-child(2) {
+  position: absolute;
+  top: 8px;
+  left: 12px;
+}
+.imageLeft span:nth-child(3) {
+  position: absolute;
+  bottom: 0;
+  background-color: var( --color-success);
+  width: 100%;
+  border-radius: 0 0 0 12px;
+  padding: 6px 0px 6px 25px;
+}
+
+.imageLeft span:nth-child(3) h3 {
+  margin: 0;
+  font-size: var(--font-size-standard);
+  font-weight: 600;
+  color: var(--color-white);
+}
+.resultsCardContent {
+  padding: 12px;
+}
+.resultsCardContent h3 {
+  margin: 0;
+  font-size: var(--font-size-small);
+  font-weight: 600;
+  line-height: 24px;
+  color: var(--color-purple);
+  margin-bottom: 8px;
+}
+.resultsCardContent p {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 19px;
+  color: var(--color-grey);
+  margin: 0px;
+  margin-bottom: 8px;
+}
+
+.imageLeft button {
+  padding: 14px 10px;
+  border-radius: 50px;
+  border: none;
+  background-color: var(--color-light-white);
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--color-purple);
+  height: 24px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+.readMoreBtn {
+  text-align: end;
+}
+.readMoreBtn button {
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--color-primary);
+  border: none;
+  background: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 3px;
+  margin-left: auto;
+}
+.readMoreBtn button:hover {
+  opacity: 0.8;
+}
+.readMoreBtn button span {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+}
+.readMoreBtn button span img {
+  height: 12px;
+}
+.mainCard .cardFlex:nth-child(2) {
+  flex-direction: row-reverse;
+}
+.mainCard .cardFlex:nth-child(2) .cardLink:nth-child(2) .resultsCard {
+  border-color: var(--color-primary);
+}
+.mainCard
+  .cardFlex:nth-child(2)
+  .cardLink:nth-child(2)
+  .resultsCard
+  .imageLeft
+  span:nth-child(3) {
+  background-color: var(--color-primary);
+}
+.mainCard {
+  display: grid;
+  gap: 15px;
+}
+.imageLeft span:nth-child(3) {
+  display: flex;
+  flex-direction: row;
+  gap: 4px;
+  align-items: center;
+}
+.imageLeft span:nth-child(3) img {
+  width: 17px;
+}
+
+/* overlay section */
+
+.iconOverlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #00000082;
+  border-radius: 11px;
+}
+.imageOverlay {
+  background: #00000059;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  text-align: center;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.play-icon {
+  width: 30px !important;
+  height: 30px;
+}
+
+.mainCard .cardFlex:nth-child(2) .cardLink:first-child .resultsCard span {
+  background: none;
+  position: absolute;
+  top: 0 !important;
+  display: block;
+  border-radius: 0 0 0 12px;
+  padding: 8px 0px 6px 14px;
+}
+
+.heartIcon {
+  background-color: var(--color-white);
+  padding: 4px 6px 0px 6px;
+  border-radius: 50%;
+  position: absolute;
+  width: 45px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  right: 10px;
+  top: 8px;
+  box-shadow: 0px 0px 8px 0px #00000026;
+  border: 1px solid var(--color-sharp-gray);
+}
+.heartIcon img {
+  width: 26px !important;
+  height: 26px;
+}
+.leftThired span {
+  display: flex;
+  align-items: center;
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 180px;
+  background-color: var(--color-black);
+  color: var(--color-white);
+  border-radius: 6px;
+  padding: 5px 10px;
+  position: absolute;
+  z-index: 1;
+  top: -5px;
+  left: 130%;
+}
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 100%;
+  margin-top: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent var(--color-black) transparent transparent;
+}
+
+@media only screen and (max-width: 576px) {
+  .mainSection {
+    padding: 10px;
+  }
+  .resultsCard {
+    flex-direction: column;
+    border-radius: 24px;
+  }
+  .imageLeft img:first-child {
+    width: 100%;
+    border-radius: 24px;
+  }
+  .imageLeft span:nth-child(3) {
+    border-radius: 0;
+  }
+  .mainSection .sectionHeader p{
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .mainSection .sectionContainer {
+    margin-top: 35px;
+    flex-direction: column;
+  }
+  .mainSection .sectionContainer .filterResults {
+    width: 100%;
+    /* position: static; */
+  }
+  .cardFlex {
+    flex-direction: column;
+  }
+  .mainCard .cardFlex:nth-child(2) {
+    flex-direction: column-reverse;
+  }
+  .mainSection .sectionContainer .rightContent {
+    width: 100%;
+  }
+}
+
+@media (min-width: 991px) and (max-width: 1199px) {
+  .cardFlex {
+    flex-direction: column;
+  }
+  .mainCard .cardFlex:nth-child(2) {
+    flex-direction: column-reverse;
+  }
+}
+

@@ -1,0 +1,85 @@
+.favouritePage {
+  margin-top: 30px;
+}
+
+.favouritePage .resultsHolder {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 24px;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+.favouritePage .resultsHolder .card {
+  cursor: pointer;
+  transition-duration: 0.3s;
+}
+.favouritePage .resultsHolder .card:hover {
+  transform: translateY(-5px);
+  transition-duration: 0.3s;
+}
+.favouritePage .resultsHolder .card .card-image-holder {
+  position: relative;
+}
+.favouritePage .resultsHolder .card .card-image-holder .card-image-full {
+  width: 100%;
+  height: auto;
+}
+.favouritePage .resultsHolder .card .card-image-holder .icons {
+  position: absolute;
+  bottom: -15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0px 14px;
+}
+.favouritePage .resultsHolder .card .card-image-holder .icons .heartIcon {
+  background-color: var(--color-white);
+  padding: 4px 6px 0px 6px;
+  border-radius: 50%;
+}
+.favouritePage .resultsHolder .card .card-image-holder .icons .webniar {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background-color: var(--color-light-white);
+  border-radius: 50px;
+  padding: 5px 12px;
+}
+.favouritePage
+  .resultsHolder
+  .card
+  .card-image-holder
+  .icons
+  .webniar
+  .wrapperWebniar
+  p {
+  color: var(--color-purple);
+  font-size: 16px;
+  font-weight: 600;
+}
+.favouritePage .resultsHolder .card .card-content .card-title {
+  color: var(--color-black);
+  font-weight: 600;
+  margin-bottom: 10px;
+  transition-duration: 0.3s;
+}
+.favouritePage .resultsHolder .card:hover .card-title {
+  color: var(--color-primary);
+  transition-duration: 0.3s;
+}
+.favouritePage .resultsHolder .card .card-content .card-para-info {
+  color: var(--color-light-black);
+  font-size: 16px;
+}
+
+@media screen and (max-width: 576px) {
+  .favouritePage .resultsHolder {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+}
+@media (min-width: 576px) and (max-width: 991px) {
+  .favouritePage .resultsHolder {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}

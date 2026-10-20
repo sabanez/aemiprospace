@@ -1,0 +1,383 @@
+.rightbar {
+  width: 100%;
+  padding-bottom: 100px;
+  background-color: #f6f7f8;
+}
+
+.right Nav {
+  width: 100%;
+  border-bottom: 1px solid var(--color-border);
+  padding: 10px 0;
+  background-color: var(--color-white);
+}
+.right Nav nav ul {
+  display: flex;
+  gap: 22px;
+  font-size: 18px;
+  font-weight: 400;
+  padding-left: 8px;
+  margin: 0px;
+  align-items: center;
+  color: var(--color-light-black);
+}
+.tabContainer nav ul a:active {
+  color: var(--color-white);
+}
+.tabContainer nav ul li {
+  list-style: none;
+}
+
+.subScore {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  background-color: #f6f7f8;
+  margin-top: 20px;
+  padding: 0 20px;
+}
+.scoreLevel {
+  width: 100%;
+}
+.totalScore {
+  border-bottom: 1px solid var(--color-border);
+  padding: 0 20px;
+  padding-top: 10px;
+}
+.totalScore p {
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 20px;
+  color: var(--color-primary);
+}
+.scoreLevel label {
+  padding-bottom: 11px;
+}
+.totalScore ul {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 15px;
+}
+.totalScore ul li {
+  list-style: none;
+}
+.totalScore ul li:first-child {
+  list-style: none;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  width: 60%;
+}
+.totalScore ul li span {
+  background: var(--color-black);
+  padding: 1px 8px;
+  border-radius: 8px;
+  position: relative;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--color-white);
+}
+.totalScore ul li span::before {
+  position: absolute;
+  content: "";
+  width: 0px;
+  height: 0px;
+  border-right: 5px solid transparent;
+  border-bottom: 10px solid var(--color-black);
+  border-left: 5px solid transparent;
+  top: -10px;
+  left: 15px;
+}
+.card-header {
+  padding: 0 20px;
+  height: 65px;
+  border-bottom: 1px solid var(--color-border);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* flex-wrap: wrap; */
+  white-space: nowrap;
+  gap: 10px;
+}
+.claim-btn {
+  background: var(--color-secondary);
+  border-radius: 50px;
+  border: 1px solid var(--color-secondary);
+  height: 35px;
+  color: var(--color-white);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 0 15px;
+  cursor: pointer;
+  font-size: 16px;
+  line-height: 21px;
+  font-weight: 500;
+  transition-duration: 0.3s;
+}
+.claim-btn:hover {
+  background-color: var(--color-white);
+  color: var(--color-secondary);
+  transition-duration: 0.3s;
+}
+.claim-btn:hover svg path {
+  fill: var(--color-secondary);
+}
+.claim-points-popup {
+  width: 800px !important;
+}
+.scoreLevel progress {
+  position: relative;
+  height: 18px;
+}
+.scoreLevel progress[value] {
+  --color: var(--color-primary);
+  --background: var(--color-sharp-gray);
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: none;
+  width: 100%;
+  border-radius: 10em;
+  background: var(--background);
+}
+.scoreLevel progress[value]::-webkit-progress-bar {
+  border-radius: 10em;
+  background: var(--background);
+}
+.scoreLevel progress[value]::-webkit-progress-value {
+  background: var(--color);
+}
+.scoreLevel progress[value]::-moz-progress-bar {
+  border-radius: 10em;
+  background: var(--color);
+}
+.scoreLevel progress::before {
+  position: absolute;
+  content: "3";
+  width: 34px;
+  height: 34px;
+  background-color: var(--color-primary);
+  border-radius: 50%;
+  top: -10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+  left: -4px;
+  color: var(--color-white);
+}
+.scoreLevel progress::after {
+  position: absolute;
+  content: "700";
+  width: 34px;
+  height: 34px;
+  background-color: var(--color-sharp-gray);
+  border-radius: 50%;
+  top: -10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+  right: -2px;
+  color: var(--color-light-black);
+}
+.skill {
+  width: 100%;
+  padding: 0 20px;
+}
+.scoreLevel .skill p:first-child {
+  font-size: 16px;
+  font-weight: 500;
+  margin: 0px;
+  color: var(--color-primary);
+  margin-top: 14px;
+}
+.skill p {
+  margin: 0;
+  margin-top: 14px;
+}
+.skill ul {
+  padding: 0px;
+  display: flex;
+  gap: 20px;
+  margin: 0px;
+  border-bottom: 1px solid var(--color-border);
+}
+.skill ul li {
+  list-style: none;
+  font-size: 17px;
+  line-height: 1.4;
+  margin-bottom: 18px;
+  margin-top: 18px;
+  color: var(--color-black);
+}
+.skill ul li:first-child {
+  width: 85%;
+}
+.skill ul li:nth-child(2) {
+  width: 15%;
+  display: flex;
+  align-items: center;
+  gap: 3px;
+  justify-content: flex-end;
+  text-wrap: nowrap;
+  color: var(--color-grey);
+}
+.skill ul li span {
+  background: var(--color-primary);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 35px;
+  border-radius: 50%;
+  width: 35px;
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--color-white);
+}
+.skill .maintProf {
+  padding: 0px;
+  display: flex;
+  gap: 20px;
+  border-bottom: none;
+}
+.contentScore {
+  padding: 15px 20px;
+}
+.RestSys {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 400;
+  color: var(--color-light-black);
+}
+.contentScore.Chilsec p {
+  font-size: 14px;
+  font-weight: 600;
+}
+.ImmuneInt {
+  position: relative;
+  width: 100%;
+  margin-top: 10px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid var(--color-sharp-gray);
+}
+.ImmuneInt table{
+  width: 100%;
+  border-collapse: collapse;
+  border-radius: 8px;
+  overflow: hidden;
+}
+.ImmuneInt table thead tr {
+  background: #F1F1F1;
+}
+.ImmuneInt table thead th {
+  text-align: left;
+  padding: 0.5rem 1rem;
+  font-size: 15px;
+  color: var(--color-light-black);
+  font-weight: 500;
+  line-height: 19px;
+}
+.ImmuneInt table tbody tr:nth-child(odd) {
+  background: var(--color-body-bg);
+}
+.ImmuneInt table tbody tr:nth-child(even) {
+  background: #F1F1F1;
+}
+.ImmuneInt table tbody td {
+  padding: 0.922rem 1rem;
+  font-size: 14px;
+  color: var(--color-black);
+  font-weight: 600;
+  line-height: 18px;
+}
+
+/* sec */
+.contentThi {
+  padding: 0 20px 15px 20px;
+}
+.ImmuneIntS {
+  position: relative;
+  width: 100%;
+  margin-top: 12px;
+  margin-bottom: 35px;
+}
+.ImmuneIntS::after {
+  position: absolute;
+  content: "";
+  border-bottom: 1px solid var(--color-sharp-gray);
+  width: 100%;
+  bottom: -30px;
+}
+
+/* fourth */
+.contentfou {
+  padding: 0px 20px 0;
+}
+.ImmuneIntF {
+  width: 100%;
+  margin-top: 12px;
+  margin-bottom: 20px;
+}
+.mainScore {
+  border: 1px solid var(--color-border);
+  background-color: var(--color-white);
+  border-radius: 12px;
+}
+
+.totalSco progress {
+  width: 100%;
+}
+@media only screen and (max-width: 500px) {
+  .skill ul {
+    display: block;
+  }
+  .skill ul li:first-child {
+    width: 100%;
+  }
+  .skill ul li:nth-child(2) {
+    width: 100%;
+    justify-content: flex-start;
+  }
+  .skill .maintProf {
+    display: block;
+  }
+}
+@media screen and (max-width:550px) {
+  .card-header{
+    flex-wrap: wrap;
+    height: auto;
+    padding-bottom: 18px;
+    padding-top: 18px;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .rightbar {
+    width: 100% !important;
+  }
+  .totalScore progress {
+    width: 100% !important;
+  }
+  .subScore {
+    flex-direction: column;
+    padding-bottom: 40px;
+  }
+  .scoreLevel {
+    width: 100% !important;
+  }
+  .tabContainer nav {
+    overflow: scroll;
+  }
+  .tabContainer nav ul {
+    white-space: nowrap;
+  }
+  /* width */
+  .tabContainer nav::-webkit-scrollbar {
+    width: 0px;
+    height: 0;
+  }
+}

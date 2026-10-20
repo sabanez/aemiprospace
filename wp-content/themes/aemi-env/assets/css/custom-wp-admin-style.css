@@ -1,0 +1,850 @@
+:root{
+  --default-toolbar-height: 52px;
+  --default-menu-spacing: 250px;
+  --sub-background: #054274;
+  --sub-color: #fff;
+  --admin-menu-actived: #033966;
+  --admin-menu-actived-color: #fff;
+  --default-border-color: #efefef;
+  --default-font-size: 15px;
+  --default-blue-color: #0087b0;
+}
+
+#wpadminbar{
+  height: var(--default-toolbar-height);
+  background: linear-gradient(345deg, #0087b0, #053c6a);
+}
+
+body.wp-admin #wpadminbar #wp-admin-bar-custom-menu-logo a{
+  width: var(--default-menu-spacing);
+}
+
+#wpadminbar #wp-admin-bar-custom-menu-logo a {
+  display: flex;
+  align-items: center;
+  padding: 10px 5px 10px 5px;
+  box-sizing: border-box;
+}
+
+#wpadminbar #wp-admin-bar-custom-menu-logo a:hover {
+  background: none;
+}
+
+#wpadminbar #wp-admin-bar-custom-menu-logo .logo-admin-toolbar{
+  max-height: 100%;
+  width: auto;
+}
+
+#wpadminbar .ab-top-menu>li.hover>.ab-item, #wpadminbar.nojq .quicklinks .ab-top-menu>li>.ab-item:focus, #wpadminbar:not(.mobile) .ab-top-menu>li:hover>.ab-item, #wpadminbar:not(.mobile) .ab-top-menu>li>.ab-item:focus {
+  background: var(--admin-menu-actived);
+  color: var(--admin-menu-actived-color);
+}
+
+#wpadminbar .menupop .ab-sub-wrapper, #wpadminbar .shortlink-input{
+  background: var(--admin-menu-actived);
+}
+
+#wpadminbar .quicklinks .ab-sub-wrapper .menupop.hover>a, #wpadminbar .quicklinks .menupop ul li a:focus, #wpadminbar .quicklinks .menupop ul li a:focus strong, #wpadminbar .quicklinks .menupop ul li a:hover, #wpadminbar .quicklinks .menupop ul li a:hover strong, #wpadminbar .quicklinks .menupop.hover ul li a:focus, #wpadminbar .quicklinks .menupop.hover ul li a:hover, #wpadminbar .quicklinks .menupop.hover ul li div[tabindex]:focus, #wpadminbar .quicklinks .menupop.hover ul li div[tabindex]:hover, #wpadminbar li #adminbarsearch.adminbar-focused:before, #wpadminbar li .ab-item:focus .ab-icon:before, #wpadminbar li .ab-item:focus:before, #wpadminbar li a:focus .ab-icon:before, #wpadminbar li.hover .ab-icon:before, #wpadminbar li.hover .ab-item:before, #wpadminbar li:hover #adminbarsearch:before, #wpadminbar li:hover .ab-icon:before, #wpadminbar li:hover .ab-item:before, #wpadminbar.nojs .quicklinks .menupop:hover ul li a:focus, #wpadminbar.nojs .quicklinks .menupop:hover ul li a:hover{
+  color: var(--admin-menu-actived-color);
+}
+
+#wpadminbar #adminbarsearch,
+#wpadminbar .quicklinks .ab-empty-item, #wpadminbar .quicklinks a, #wpadminbar .shortlink-input {
+  height: var(--default-toolbar-height);
+}
+
+#wpadminbar #adminbarsearch:before{
+  top: 16px;
+}
+
+#wpadminbar>#wp-toolbar>#wp-admin-bar-top-secondary>#wp-admin-bar-search #adminbarsearch input.adminbar-input:focus{
+  background: rgba(255,255,255,0.3);
+}
+
+@media only screen and (min-width: 961px){
+
+
+  #wpadminbar .quicklinks .menupop ul li .ab-item, #wpadminbar .quicklinks .menupop ul li a strong, #wpadminbar .quicklinks .menupop.hover ul li .ab-item, #wpadminbar .shortlink-input, #wpadminbar.nojs .quicklinks .menupop:hover ul li .ab-item {
+    line-height: 2.3;
+    height: 35px;
+  }
+  
+  #wpadminbar *{
+    line-height: 3.5;
+    font-size: var(--default-font-size);;
+  }
+  #wpadminbar #wp-toolbar > ul > li > a:before,
+  #wpadminbar #wp-toolbar > ul > li > a > span:before{
+    top: 12px!important;
+  }
+  #wpadminbar #wp-admin-bar-my-sites>.ab-item:before, #wpadminbar #wp-admin-bar-site-name>.ab-item:before{
+    top: 10px!important;
+  }
+
+  html.wp-toolbar{
+    padding-top: var(--default-toolbar-height);
+  }
+  
+  .wp-admin:not(.folded) #adminmenu, 
+  .wp-admin:not(.folded) #adminmenu .wp-submenu, 
+  .wp-admin:not(.folded) #adminmenuback, 
+  .wp-admin:not(.folded) #adminmenuwrap {
+    width: var(--default-menu-spacing);
+  }
+  
+  .wp-admin:not(.folded) #wpcontent, 
+  .wp-admin:not(.folded) #wpfooter {
+    margin-left: var(--default-menu-spacing);
+  }
+  
+  .wp-admin:not(.folded) #adminmenu li:not(.wp-menu-open) .wp-submenu{
+    left: var(--default-menu-spacing);
+  }
+}
+
+#adminmenu, 
+#adminmenuback, 
+#adminmenuwrap {
+  background: linear-gradient(326deg, #0087b0, #053c6a);
+  transition: all 300ms;
+}
+
+#adminmenuwrap,
+#adminmenu {
+  background: none;
+}
+
+#adminmenu .wp-submenu-head, #adminmenu a.menu-top {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.6;
+  padding: 0;
+}
+
+div.wp-menu-image:before {
+  padding: 11px 0;
+}
+#adminmenu li.wp-menu-separator {
+  height: 1px;
+  margin: 11px 0;
+}
+
+#adminmenu div.separator {
+  height: 1px;
+  padding: 0;
+  background: #0000001f;
+}
+
+#adminmenu li.wp-menu-open + .wp-menu-separator{
+  margin-top: 0px;
+}
+
+#adminmenu .wp-submenu{
+  background: var(--sub-background);
+}
+
+#adminmenu .wp-has-current-submenu .wp-submenu .wp-submenu-head, #adminmenu .wp-menu-arrow, #adminmenu .wp-menu-arrow div, #adminmenu li.current a.menu-top, #adminmenu li.wp-has-current-submenu a.wp-has-current-submenu {
+  background: var(--admin-menu-actived);
+  color: var(--admin-menu-actived-color);
+}
+
+#adminmenu li.menu-top:hover > a{
+  color: var(--admin-menu-actived-color);
+}
+
+#adminmenu li.menu-top > ul li:hover a{
+  color: var(--admin-menu-actived-color);
+}
+
+#adminmenu li.menu-top:hover > a,
+#adminmenu li.menu-top:hover, #adminmenu li.opensub>a.menu-top, #adminmenu li>a.menu-top:focus {
+  color: var(--admin-menu-actived-color);
+  background: var(--admin-menu-actived);
+}
+
+#adminmenu li a:focus div.wp-menu-image:before, #adminmenu li.opensub div.wp-menu-image:before, #adminmenu li:hover div.wp-menu-image:before {
+  color: var(--admin-menu-actived-color);
+}
+
+.postbox{
+  border-color: var(--default-border-color);
+  box-shadow: 0 0 13px -7px rgb(0 0 0 / 30%);
+  border-radius: 8px;
+}
+
+.postbox-header{
+  border-bottom: 1px solid rgba(0,0,0,0);
+  box-shadow: 0 0 13px -7px rgb(0 0 0 / 30%);
+}
+.metabox-holder .postbox>h3, .metabox-holder .stuffbox>h3, .metabox-holder h2.hndle, .metabox-holder h3.hndle {
+  font-size: var(--default-font-size);;
+  padding: 14px 20px;
+}
+
+#adminmenu li.wp-has-submenu.wp-not-current-submenu.opensub:hover:after, #adminmenu li.wp-has-submenu.wp-not-current-submenu:focus-within:after {
+  border-right-color: var(--admin-menu-actived);
+}
+
+.postbox .inside {
+  padding: 0 20px 20px;
+  line-height: 1.4;
+  font-size: var(--default-font-size);;
+}
+
+.postbox .inside h2, .wrap [class$=icon32]+h2, .wrap h1, .wrap>h2:first-child {
+  font-size: 30px;
+  font-weight: bold;
+  padding: 20px 0 24px;
+}
+
+#menu-management .menu-edit, #menu-settings-column .accordion-container, .comment-ays, .feature-filter, .imgedit-group, .manage-menus, .menu-item-handle, .popular-tags, .stuffbox, .widget-inside, .widget-top, .widgets-holder-wrap, .wp-editor-container, p.popular-tags, table.widefat {
+  border-color: var(--default-border-color);
+  box-shadow: 0 0 13px -7px rgb(0 0 0 / 30%);
+  border-radius: 5px;
+}
+
+.widefat tfoot td, .widefat tfoot th,
+.widefat thead td, .widefat thead th {
+  border-color: var(--default-border-color);
+}
+
+.alternate, .striped>tbody>:nth-child(odd), ul.striped>:nth-child(odd) {
+  background-color: #fdfdfd;
+}
+
+
+.wp-admin input[type=color], 
+.wp-admin input[type=date], 
+.wp-admin input[type=datetime-local], 
+.wp-admin input[type=datetime], 
+.wp-admin input[type=email], 
+.wp-admin input[type=month], 
+.wp-admin input[type=number], 
+.wp-admin input[type=password], 
+.wp-admin input[type=search], 
+.wp-admin input[type=tel], 
+.wp-admin input[type=text], 
+.wp-admin input[type=time], 
+.wp-admin input[type=url], 
+.wp-admin input[type=week], 
+.wp-admin select, 
+.wp-admin textarea,
+.wp-core-ui select{
+  border-color: var(--default-border-color);
+  box-shadow: 0 0 13px -7px rgb(0 0 0 / 30%);
+  font-size: var(--default-font-size);;
+  min-height: 40px;
+  border-radius: 8px;
+}
+.wrap .add-new-h2, .wrap .add-new-h2:active, .wrap .page-title-action, .wrap .page-title-action:active,
+.wp-core-ui .button, .wp-core-ui .button-primary, .wp-core-ui .button-secondary {
+  font-size: var(--default-font-size);;
+  min-height: 40px;
+  padding: 0 20px;
+  border-radius: 8px;
+}
+
+.wrap .add-new-h2, .wrap .add-new-h2:active, .wrap .page-title-action, .wrap .page-title-action:active{
+  padding-top: 9px;
+  padding-bottom: 9px;
+}
+
+.tablenav {
+  height: 40px;
+  margin: 6px 0 14px;
+  padding-top: 15px;
+}
+
+.subsubsub{
+  font-size: var(--default-font-size);
+}
+
+.form-table, .form-table td, .form-table td p, .form-table th,
+.wp-filter,
+body{
+  font-size: var(--default-font-size);
+}
+
+.row-title {
+  font-size: var(--default-font-size)!important;
+}
+.tablenav .one-page .displaying-num {
+  margin: 12px 0;
+}
+input[type=number].small-text {
+  width: 100px;
+  text-align: center;
+}
+
+#screen-meta-links .show-settings,
+#screen-meta {
+  border-color: #efefef;
+}
+
+.media-toolbar.wp-filter{
+  border-color: #efefef;
+}
+
+.media-frame select, .wp-admin .media-frame select{
+  min-height: 43px;
+}
+
+.media-toolbar.wp-filter .view-switch{
+  padding: 17px 0;
+}
+.media-frame.mode-grid .wp-filter input[type=search]{
+  box-shadow: 0 0 13px -7px rgb(0 0 0 / 30%);
+  border: none;
+  border-color: var(--default-border-color);
+}
+
+#wpadminbar #wp-admin-bar-my-account.with-avatar > a img{
+  border: none;
+  border-radius: 50px;
+  height: 30px;
+}
+
+.options-permalink-php form[action="options-permalink.php"],
+.options-media-php form[action="options.php"],
+.options-reading-php form[action="options.php"],
+.options-discussion-php form[action="options.php"],
+.options-writing-php form[action="options.php"],
+.options-general-php form[action="options.php"],
+#createuser,
+#your-profile{
+  box-shadow: 0 0 13px -7px rgb(0 0 0 / 30%);
+  background: #fff;
+  padding: 5px 35px;
+  box-sizing: content-box;
+  border-radius: 5px; 
+}
+
+
+.options-permalink-php form[action="options-permalink.php"] input[type=color], 
+.options-permalink-php form[action="options-permalink.php"] input[type=date], 
+.options-permalink-php form[action="options-permalink.php"] input[type=datetime-local], 
+.options-permalink-php form[action="options-permalink.php"] input[type=datetime], 
+.options-permalink-php form[action="options-permalink.php"] input[type=email], 
+.options-permalink-php form[action="options-permalink.php"] input[type=month], 
+.options-permalink-php form[action="options-permalink.php"] input[type=number], 
+.options-permalink-php form[action="options-permalink.php"] input[type=password], 
+.options-permalink-php form[action="options-permalink.php"] input[type=search], 
+.options-permalink-php form[action="options-permalink.php"] input[type=tel], 
+.options-permalink-php form[action="options-permalink.php"] input[type=text], 
+.options-permalink-php form[action="options-permalink.php"] input[type=time], 
+.options-permalink-php form[action="options-permalink.php"] input[type=url], 
+.options-permalink-php form[action="options-permalink.php"] input[type=week], 
+.options-permalink-php form[action="options-permalink.php"] select, 
+.options-permalink-php form[action="options-permalink.php"] textarea, 
+.options-permalink-php form[action="options-permalink.php"] .wp-core-ui select,
+
+.options-media-php form[action="options.php"] input[type=color], 
+.options-media-php form[action="options.php"] input[type=date], 
+.options-media-php form[action="options.php"] input[type=datetime-local], 
+.options-media-php form[action="options.php"] input[type=datetime], 
+.options-media-php form[action="options.php"] input[type=email], 
+.options-media-php form[action="options.php"] input[type=month], 
+.options-media-php form[action="options.php"] input[type=number], 
+.options-media-php form[action="options.php"] input[type=password], 
+.options-media-php form[action="options.php"] input[type=search], 
+.options-media-php form[action="options.php"] input[type=tel], 
+.options-media-php form[action="options.php"] input[type=text], 
+.options-media-php form[action="options.php"] input[type=time], 
+.options-media-php form[action="options.php"] input[type=url], 
+.options-media-php form[action="options.php"] input[type=week], 
+.options-media-php form[action="options.php"] select, 
+.options-media-php form[action="options.php"] textarea, 
+.options-media-php form[action="options.php"] .wp-core-ui select,
+
+.options-discussion-php form[action="options.php"] input[type=color], 
+.options-discussion-php form[action="options.php"] input[type=date], 
+.options-discussion-php form[action="options.php"] input[type=datetime-local], 
+.options-discussion-php form[action="options.php"] input[type=datetime], 
+.options-discussion-php form[action="options.php"] input[type=email], 
+.options-discussion-php form[action="options.php"] input[type=month], 
+.options-discussion-php form[action="options.php"] input[type=number], 
+.options-discussion-php form[action="options.php"] input[type=password], 
+.options-discussion-php form[action="options.php"] input[type=search], 
+.options-discussion-php form[action="options.php"] input[type=tel], 
+.options-discussion-php form[action="options.php"] input[type=text], 
+.options-discussion-php form[action="options.php"] input[type=time], 
+.options-discussion-php form[action="options.php"] input[type=url], 
+.options-discussion-php form[action="options.php"] input[type=week], 
+.options-discussion-php form[action="options.php"] select, 
+.options-discussion-php form[action="options.php"] textarea, 
+.options-discussion-php form[action="options.php"] .wp-core-ui select,
+
+.options-reading-php form[action="options.php"] input[type=color], 
+.options-reading-php form[action="options.php"] input[type=date], 
+.options-reading-php form[action="options.php"] input[type=datetime-local], 
+.options-reading-php form[action="options.php"] input[type=datetime], 
+.options-reading-php form[action="options.php"] input[type=email], 
+.options-reading-php form[action="options.php"] input[type=month], 
+.options-reading-php form[action="options.php"] input[type=number], 
+.options-reading-php form[action="options.php"] input[type=password], 
+.options-reading-php form[action="options.php"] input[type=search], 
+.options-reading-php form[action="options.php"] input[type=tel], 
+.options-reading-php form[action="options.php"] input[type=text], 
+.options-reading-php form[action="options.php"] input[type=time], 
+.options-reading-php form[action="options.php"] input[type=url], 
+.options-reading-php form[action="options.php"] input[type=week], 
+.options-reading-php form[action="options.php"] select, 
+.options-reading-php form[action="options.php"] textarea, 
+.options-reading-php form[action="options.php"] .wp-core-ui select,
+
+.options-writing-php form[action="options.php"] input[type=color], 
+.options-writing-php form[action="options.php"] input[type=date], 
+.options-writing-php form[action="options.php"] input[type=datetime-local], 
+.options-writing-php form[action="options.php"] input[type=datetime], 
+.options-writing-php form[action="options.php"] input[type=email], 
+.options-writing-php form[action="options.php"] input[type=month], 
+.options-writing-php form[action="options.php"] input[type=number], 
+.options-writing-php form[action="options.php"] input[type=password], 
+.options-writing-php form[action="options.php"] input[type=search], 
+.options-writing-php form[action="options.php"] input[type=tel], 
+.options-writing-php form[action="options.php"] input[type=text], 
+.options-writing-php form[action="options.php"] input[type=time], 
+.options-writing-php form[action="options.php"] input[type=url], 
+.options-writing-php form[action="options.php"] input[type=week], 
+.options-writing-php form[action="options.php"] select, 
+.options-writing-php form[action="options.php"] textarea, 
+.options-writing-php form[action="options.php"] .wp-core-ui select,
+
+.options-general-php form[action="options.php"] input[type=color], 
+.options-general-php form[action="options.php"] input[type=date], 
+.options-general-php form[action="options.php"] input[type=datetime-local], 
+.options-general-php form[action="options.php"] input[type=datetime], 
+.options-general-php form[action="options.php"] input[type=email], 
+.options-general-php form[action="options.php"] input[type=month], 
+.options-general-php form[action="options.php"] input[type=number], 
+.options-general-php form[action="options.php"] input[type=password], 
+.options-general-php form[action="options.php"] input[type=search], 
+.options-general-php form[action="options.php"] input[type=tel], 
+.options-general-php form[action="options.php"] input[type=text], 
+.options-general-php form[action="options.php"] input[type=time], 
+.options-general-php form[action="options.php"] input[type=url], 
+.options-general-php form[action="options.php"] input[type=week], 
+.options-general-php form[action="options.php"] select, 
+.options-general-php form[action="options.php"] textarea, 
+.options-general-php form[action="options.php"] .wp-core-ui select,
+
+#createuser input[type=color], 
+#createuser input[type=date], 
+#createuser input[type=datetime-local], 
+#createuser input[type=datetime], 
+#createuser input[type=email], 
+#createuser input[type=month], 
+#createuser input[type=number], 
+#createuser input[type=password], 
+#createuser input[type=search], 
+#createuser input[type=tel], 
+#createuser input[type=text], 
+#createuser input[type=time], 
+#createuser input[type=url], 
+#createuser input[type=week], 
+#createuser select, 
+#createuser textarea, 
+#createuser .wp-core-ui select,
+
+#your-profile input[type=color], 
+#your-profile input[type=date], 
+#your-profile input[type=datetime-local], 
+#your-profile input[type=datetime], 
+#your-profile input[type=email], 
+#your-profile input[type=month], 
+#your-profile input[type=number], 
+#your-profile input[type=password], 
+#your-profile input[type=search], 
+#your-profile input[type=tel], 
+#your-profile input[type=text], 
+#your-profile input[type=time], 
+#your-profile input[type=url], 
+#your-profile input[type=week], 
+#your-profile select, 
+#your-profile textarea, 
+#your-profile .wp-core-ui select{
+  box-shadow: none;
+  border-color: #ddd;
+}
+
+.wp-switch-editor{
+  height: 30px!important;
+}
+
+/** ============================================================
+                          CHECKBOX
+    ============================================================ */
+.aemi-painel-checkbox{}
+.aemi-painel-checkbox input{
+  display: none;
+}
+.aemi-painel-checkbox span{
+  background: #eee;
+  width: 80px;
+  height: 35px;
+  display: block;
+  border-radius: 70px;
+  border: 1px solid #ddd;
+  position: relative;
+  cursor: pointer;
+}
+.aemi-painel-checkbox span:before{
+  transition: all 300ms;
+  content: "";
+  display: block;
+  box-shadow: 0 0 6px -4px rgba(0,0,0,0.3);
+  background: #fff;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #f7f7f7;
+  position: absolute;
+  top: 1px;
+  left: 3px;
+}
+
+.aemi-painel-checkbox input:checked + span{
+  background: #0087b0;
+}
+
+.aemi-painel-checkbox input:checked + span:before{
+  left: calc( 100% - 36px );
+}
+
+
+.aemi-custom-fields__box{
+  display: flex;
+  align-items: center;
+  padding-top: 30px;
+}
+
+.aemi-custom-fields__box.align-to-top{
+  align-items: unset;
+}
+
+.aemi-custom-fields__box.no-padding{
+  padding-top: 0px;
+}
+
+.aemi-custom-fields__box + .aemi-custom-fields__box{
+  margin-top: 30px;
+  border-top: 1px solid rgba(0,0,0,0.05);
+}
+
+.aemi-custom-fields__box__title{
+  font-weight: bold;
+  padding-right: 15px;
+  min-width: 150px;
+}
+
+.aemi-custom-fields__box__input-container{
+  
+}
+
+.aemi-custom-fields__box__input{
+  width: 100%;
+}
+
+.aemi-w-100{
+  width: 100%;
+}
+
+.aemi-d-flex{
+  display: flex;
+}
+
+.aemi-pl-1{
+  padding-left: 10px;
+}
+
+.aemi-align-items-center{
+  align-items: center;
+}
+
+.aemi-custom-fields__box__input-container{
+  width: 100%;
+  box-sizing: border-box;
+}
+.aemi-custom-fields__box__input-container * {
+  box-sizing: border-box;
+}
+.aemi-admin-tabs-controlls .aemi-admin-tabs__current-tab-input{
+  display: none!important;
+}
+
+.aemi-admin-tabs-container{
+  flex-direction: row;
+  display: flex;
+}
+
+.aemi-admin-tabs-container label{
+  background: #f7f7f7;
+  padding: 11px 30px;
+  border-radius: 5px 5px 0 0;
+  border: 1px solid #eee;
+  border-bottom-color: #eee;
+  display: flex;
+}
+
+.aemi-admin-tabs-container label + label{
+  margin-left: 5px;
+}
+
+.aemi-admin-tabs-controlls .aemi-admin-tabs__current-tab-input[data-tabid="0"]:checked ~ .aemi-admin-tabs-container label[data-tabid="0"],
+.aemi-admin-tabs-controlls .aemi-admin-tabs__current-tab-input[data-tabid="1"]:checked ~ .aemi-admin-tabs-container label[data-tabid="1"],
+.aemi-admin-tabs-controlls .aemi-admin-tabs__current-tab-input[data-tabid="2"]:checked ~ .aemi-admin-tabs-container label[data-tabid="2"],
+.aemi-admin-tabs-controlls .aemi-admin-tabs__current-tab-input[data-tabid="3"]:checked ~ .aemi-admin-tabs-container label[data-tabid="3"],
+.aemi-admin-tabs-controlls .aemi-admin-tabs__current-tab-input[data-tabid="4"]:checked ~ .aemi-admin-tabs-container label[data-tabid="4"],
+.aemi-admin-tabs-controlls .aemi-admin-tabs__current-tab-input[data-tabid="5"]:checked ~ .aemi-admin-tabs-container label[data-tabid="5"],
+.aemi-admin-tabs-controlls .aemi-admin-tabs__current-tab-input[data-tabid="6"]:checked ~ .aemi-admin-tabs-container label[data-tabid="6"],
+.aemi-admin-tabs-controlls .aemi-admin-tabs__current-tab-input[data-tabid="7"]:checked ~ .aemi-admin-tabs-container label[data-tabid="7"],
+.aemi-admin-tabs-controlls .aemi-admin-tabs__current-tab-input[data-tabid="8"]:checked ~ .aemi-admin-tabs-container label[data-tabid="8"],
+.aemi-admin-tabs-controlls .aemi-admin-tabs__current-tab-input[data-tabid="9"]:checked ~ .aemi-admin-tabs-container label[data-tabid="9"],
+.aemi-admin-tabs-controlls .aemi-admin-tabs__current-tab-input[data-tabid="10"]:checked ~ .aemi-admin-tabs-container label[data-tabid="10"],
+.aemi-admin-tabs-controlls .aemi-admin-tabs__current-tab-input[data-tabid="11"]:checked ~ .aemi-admin-tabs-container label[data-tabid="11"],
+.aemi-admin-tabs-controlls .aemi-admin-tabs__current-tab-input[data-tabid="12"]:checked ~ .aemi-admin-tabs-container label[data-tabid="12"],
+.aemi-admin-tabs-controlls .aemi-admin-tabs__current-tab-input[data-tabid="13"]:checked ~ .aemi-admin-tabs-container label[data-tabid="13"],
+.aemi-admin-tabs-controlls .aemi-admin-tabs__current-tab-input[data-tabid="14"]:checked ~ .aemi-admin-tabs-container label[data-tabid="14"],
+.aemi-admin-tabs-controlls .aemi-admin-tabs__current-tab-input[data-tabid="15"]:checked ~ .aemi-admin-tabs-container label[data-tabid="15"],
+.aemi-admin-tabs-controlls .aemi-admin-tabs__current-tab-input[data-tabid="16"]:checked ~ .aemi-admin-tabs-container label[data-tabid="16"],
+.aemi-admin-tabs-controlls .aemi-admin-tabs__current-tab-input[data-tabid="17"]:checked ~ .aemi-admin-tabs-container label[data-tabid="17"],
+.aemi-admin-tabs-controlls .aemi-admin-tabs__current-tab-input[data-tabid="18"]:checked ~ .aemi-admin-tabs-container label[data-tabid="18"],
+.aemi-admin-tabs-controlls .aemi-admin-tabs__current-tab-input[data-tabid="19"]:checked ~ .aemi-admin-tabs-container label[data-tabid="19"],
+.aemi-admin-tabs-controlls .aemi-admin-tabs__current-tab-input[data-tabid="20"]:checked ~ .aemi-admin-tabs-container label[data-tabid="20"],
+.aemi-admin-tabs-controlls .aemi-admin-tabs__current-tab-input[data-tabid="20"]:checked ~ .aemi-admin-tabs-container label[data-tabid="20"],
+.aemi-admin-tabs-controlls .aemi-admin-tabs__current-tab-input[data-tabid="11"]:checked ~ .aemi-admin-tabs-container label[data-tabid="21"],
+.aemi-admin-tabs-controlls .aemi-admin-tabs__current-tab-input[data-tabid="12"]:checked ~ .aemi-admin-tabs-container label[data-tabid="22"],
+.aemi-admin-tabs-controlls .aemi-admin-tabs__current-tab-input[data-tabid="13"]:checked ~ .aemi-admin-tabs-container label[data-tabid="23"],
+.aemi-admin-tabs-controlls .aemi-admin-tabs__current-tab-input[data-tabid="14"]:checked ~ .aemi-admin-tabs-container label[data-tabid="24"],
+.aemi-admin-tabs-controlls .aemi-admin-tabs__current-tab-input[data-tabid="15"]:checked ~ .aemi-admin-tabs-container label[data-tabid="25"],
+.aemi-admin-tabs-controlls .aemi-admin-tabs__current-tab-input[data-tabid="16"]:checked ~ .aemi-admin-tabs-container label[data-tabid="26"],
+.aemi-admin-tabs-controlls .aemi-admin-tabs__current-tab-input[data-tabid="17"]:checked ~ .aemi-admin-tabs-container label[data-tabid="27"],
+.aemi-admin-tabs-controlls .aemi-admin-tabs__current-tab-input[data-tabid="18"]:checked ~ .aemi-admin-tabs-container label[data-tabid="28"],
+.aemi-admin-tabs-controlls .aemi-admin-tabs__current-tab-input[data-tabid="19"]:checked ~ .aemi-admin-tabs-container label[data-tabid="29"],
+.aemi-admin-tabs-controlls .aemi-admin-tabs__current-tab-input[data-tabid="20"]:checked ~ .aemi-admin-tabs-container label[data-tabid="30"],
+.aemi-admin-tabs-controlls .aemi-admin-tabs__current-tab-input[data-tabid="11"]:checked ~ .aemi-admin-tabs-container label[data-tabid="31"],
+.aemi-admin-tabs-controlls .aemi-admin-tabs__current-tab-input[data-tabid="12"]:checked ~ .aemi-admin-tabs-container label[data-tabid="32"],
+.aemi-admin-tabs-controlls .aemi-admin-tabs__current-tab-input[data-tabid="13"]:checked ~ .aemi-admin-tabs-container label[data-tabid="33"],
+.aemi-admin-tabs-controlls .aemi-admin-tabs__current-tab-input[data-tabid="14"]:checked ~ .aemi-admin-tabs-container label[data-tabid="34"],
+.aemi-admin-tabs-controlls .aemi-admin-tabs__current-tab-input[data-tabid="15"]:checked ~ .aemi-admin-tabs-container label[data-tabid="35"],
+.aemi-admin-tabs-controlls .aemi-admin-tabs__current-tab-input[data-tabid="16"]:checked ~ .aemi-admin-tabs-container label[data-tabid="36"],
+.aemi-admin-tabs-controlls .aemi-admin-tabs__current-tab-input[data-tabid="17"]:checked ~ .aemi-admin-tabs-container label[data-tabid="37"],
+.aemi-admin-tabs-controlls .aemi-admin-tabs__current-tab-input[data-tabid="18"]:checked ~ .aemi-admin-tabs-container label[data-tabid="38"],
+.aemi-admin-tabs-controlls .aemi-admin-tabs__current-tab-input[data-tabid="19"]:checked ~ .aemi-admin-tabs-container label[data-tabid="39"],
+.aemi-admin-tabs-controlls .aemi-admin-tabs__current-tab-input[data-tabid="20"]:checked ~ .aemi-admin-tabs-container label[data-tabid="40"]{
+  background: var( --default-blue-color );
+  border-color: var( --default-blue-color );
+  color: #fff;
+}
+
+.aemi-custom-box-to-list-shortcodes{
+  background: #f7f7f7;
+  border: 1px solid #eee;
+  border-radius: 5px;
+  padding: 15px;
+}
+
+.aemi-custom-box-to-list-shortcodes ul{
+  padding: 0;
+  margin: 0;
+}
+
+.aemi-custom-box-to-list-shortcodes ul li{
+  padding: 0;
+}
+
+.aemi-custom-box-to-list-shortcodes ul li + li{
+  margin-top: 10px;
+}
+
+.aemi-custom-box-to-list-shortcodes ul li strong{
+  color: #f30606;
+}
+
+.aemi-admin-tabs__content .aemi-admin-tabs__content-inner{
+  display: none;
+  padding: 30px;
+  background: #f7f7f7;
+  border: 1px solid #eee;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.aemi-admin-tabs__content .aemi-admin-tabs__content-inner .aemi-admin-tabs-controlls .aemi-admin-tabs__content .aemi-admin-tabs__content-inner{
+  border-color: #d3d3d3;
+  background: #fff;
+}
+
+.aemi-admin-tabs__content .aemi-admin-tabs__content-inner .aemi-admin-tabs-controlls .aemi-admin-tabs-container label{
+  border-color: #d3d3d3;
+  background: #d3d3d3;
+}
+
+.aemi-admin-tabs-controlls .aemi-admin-tabs__current-tab-input[data-tabid="0"]:checked ~ .aemi-admin-tabs__content > .aemi-admin-tabs__content-inner[data-tabid="0"],
+.aemi-admin-tabs-controlls .aemi-admin-tabs__current-tab-input[data-tabid="1"]:checked ~ .aemi-admin-tabs__content > .aemi-admin-tabs__content-inner[data-tabid="1"],
+.aemi-admin-tabs-controlls .aemi-admin-tabs__current-tab-input[data-tabid="2"]:checked ~ .aemi-admin-tabs__content > .aemi-admin-tabs__content-inner[data-tabid="2"],
+.aemi-admin-tabs-controlls .aemi-admin-tabs__current-tab-input[data-tabid="3"]:checked ~ .aemi-admin-tabs__content > .aemi-admin-tabs__content-inner[data-tabid="3"],
+.aemi-admin-tabs-controlls .aemi-admin-tabs__current-tab-input[data-tabid="4"]:checked ~ .aemi-admin-tabs__content > .aemi-admin-tabs__content-inner[data-tabid="4"],
+.aemi-admin-tabs-controlls .aemi-admin-tabs__current-tab-input[data-tabid="5"]:checked ~ .aemi-admin-tabs__content > .aemi-admin-tabs__content-inner[data-tabid="5"],
+.aemi-admin-tabs-controlls .aemi-admin-tabs__current-tab-input[data-tabid="6"]:checked ~ .aemi-admin-tabs__content > .aemi-admin-tabs__content-inner[data-tabid="6"],
+.aemi-admin-tabs-controlls .aemi-admin-tabs__current-tab-input[data-tabid="7"]:checked ~ .aemi-admin-tabs__content > .aemi-admin-tabs__content-inner[data-tabid="7"],
+.aemi-admin-tabs-controlls .aemi-admin-tabs__current-tab-input[data-tabid="8"]:checked ~ .aemi-admin-tabs__content > .aemi-admin-tabs__content-inner[data-tabid="8"],
+.aemi-admin-tabs-controlls .aemi-admin-tabs__current-tab-input[data-tabid="9"]:checked ~ .aemi-admin-tabs__content > .aemi-admin-tabs__content-inner[data-tabid="9"],
+.aemi-admin-tabs-controlls .aemi-admin-tabs__current-tab-input[data-tabid="10"]:checked ~ .aemi-admin-tabs__content > .aemi-admin-tabs__content-inner[data-tabid="10"],
+.aemi-admin-tabs-controlls .aemi-admin-tabs__current-tab-input[data-tabid="11"]:checked ~ .aemi-admin-tabs__content > .aemi-admin-tabs__content-inner[data-tabid="11"],
+.aemi-admin-tabs-controlls .aemi-admin-tabs__current-tab-input[data-tabid="12"]:checked ~ .aemi-admin-tabs__content > .aemi-admin-tabs__content-inner[data-tabid="12"],
+.aemi-admin-tabs-controlls .aemi-admin-tabs__current-tab-input[data-tabid="13"]:checked ~ .aemi-admin-tabs__content > .aemi-admin-tabs__content-inner[data-tabid="13"],
+.aemi-admin-tabs-controlls .aemi-admin-tabs__current-tab-input[data-tabid="14"]:checked ~ .aemi-admin-tabs__content > .aemi-admin-tabs__content-inner[data-tabid="14"],
+.aemi-admin-tabs-controlls .aemi-admin-tabs__current-tab-input[data-tabid="15"]:checked ~ .aemi-admin-tabs__content > .aemi-admin-tabs__content-inner[data-tabid="15"],
+.aemi-admin-tabs-controlls .aemi-admin-tabs__current-tab-input[data-tabid="16"]:checked ~ .aemi-admin-tabs__content > .aemi-admin-tabs__content-inner[data-tabid="16"],
+.aemi-admin-tabs-controlls .aemi-admin-tabs__current-tab-input[data-tabid="17"]:checked ~ .aemi-admin-tabs__content > .aemi-admin-tabs__content-inner[data-tabid="17"],
+.aemi-admin-tabs-controlls .aemi-admin-tabs__current-tab-input[data-tabid="18"]:checked ~ .aemi-admin-tabs__content > .aemi-admin-tabs__content-inner[data-tabid="18"],
+.aemi-admin-tabs-controlls .aemi-admin-tabs__current-tab-input[data-tabid="19"]:checked ~ .aemi-admin-tabs__content > .aemi-admin-tabs__content-inner[data-tabid="19"],
+.aemi-admin-tabs-controlls .aemi-admin-tabs__current-tab-input[data-tabid="20"]:checked ~ .aemi-admin-tabs__content > .aemi-admin-tabs__content-inner[data-tabid="20"],
+.aemi-admin-tabs-controlls .aemi-admin-tabs__current-tab-input[data-tabid="20"]:checked ~ .aemi-admin-tabs__content > .aemi-admin-tabs__content-inner[data-tabid="20"],
+.aemi-admin-tabs-controlls .aemi-admin-tabs__current-tab-input[data-tabid="11"]:checked ~ .aemi-admin-tabs__content > .aemi-admin-tabs__content-inner[data-tabid="21"],
+.aemi-admin-tabs-controlls .aemi-admin-tabs__current-tab-input[data-tabid="12"]:checked ~ .aemi-admin-tabs__content > .aemi-admin-tabs__content-inner[data-tabid="22"],
+.aemi-admin-tabs-controlls .aemi-admin-tabs__current-tab-input[data-tabid="13"]:checked ~ .aemi-admin-tabs__content > .aemi-admin-tabs__content-inner[data-tabid="23"],
+.aemi-admin-tabs-controlls .aemi-admin-tabs__current-tab-input[data-tabid="14"]:checked ~ .aemi-admin-tabs__content > .aemi-admin-tabs__content-inner[data-tabid="24"],
+.aemi-admin-tabs-controlls .aemi-admin-tabs__current-tab-input[data-tabid="15"]:checked ~ .aemi-admin-tabs__content > .aemi-admin-tabs__content-inner[data-tabid="25"],
+.aemi-admin-tabs-controlls .aemi-admin-tabs__current-tab-input[data-tabid="16"]:checked ~ .aemi-admin-tabs__content > .aemi-admin-tabs__content-inner[data-tabid="26"],
+.aemi-admin-tabs-controlls .aemi-admin-tabs__current-tab-input[data-tabid="17"]:checked ~ .aemi-admin-tabs__content > .aemi-admin-tabs__content-inner[data-tabid="27"],
+.aemi-admin-tabs-controlls .aemi-admin-tabs__current-tab-input[data-tabid="18"]:checked ~ .aemi-admin-tabs__content > .aemi-admin-tabs__content-inner[data-tabid="28"],
+.aemi-admin-tabs-controlls .aemi-admin-tabs__current-tab-input[data-tabid="19"]:checked ~ .aemi-admin-tabs__content > .aemi-admin-tabs__content-inner[data-tabid="29"],
+.aemi-admin-tabs-controlls .aemi-admin-tabs__current-tab-input[data-tabid="20"]:checked ~ .aemi-admin-tabs__content > .aemi-admin-tabs__content-inner[data-tabid="30"],
+.aemi-admin-tabs-controlls .aemi-admin-tabs__current-tab-input[data-tabid="11"]:checked ~ .aemi-admin-tabs__content > .aemi-admin-tabs__content-inner[data-tabid="31"],
+.aemi-admin-tabs-controlls .aemi-admin-tabs__current-tab-input[data-tabid="12"]:checked ~ .aemi-admin-tabs__content > .aemi-admin-tabs__content-inner[data-tabid="32"],
+.aemi-admin-tabs-controlls .aemi-admin-tabs__current-tab-input[data-tabid="13"]:checked ~ .aemi-admin-tabs__content > .aemi-admin-tabs__content-inner[data-tabid="33"],
+.aemi-admin-tabs-controlls .aemi-admin-tabs__current-tab-input[data-tabid="14"]:checked ~ .aemi-admin-tabs__content > .aemi-admin-tabs__content-inner[data-tabid="34"],
+.aemi-admin-tabs-controlls .aemi-admin-tabs__current-tab-input[data-tabid="15"]:checked ~ .aemi-admin-tabs__content > .aemi-admin-tabs__content-inner[data-tabid="35"],
+.aemi-admin-tabs-controlls .aemi-admin-tabs__current-tab-input[data-tabid="16"]:checked ~ .aemi-admin-tabs__content > .aemi-admin-tabs__content-inner[data-tabid="36"],
+.aemi-admin-tabs-controlls .aemi-admin-tabs__current-tab-input[data-tabid="17"]:checked ~ .aemi-admin-tabs__content > .aemi-admin-tabs__content-inner[data-tabid="37"],
+.aemi-admin-tabs-controlls .aemi-admin-tabs__current-tab-input[data-tabid="18"]:checked ~ .aemi-admin-tabs__content > .aemi-admin-tabs__content-inner[data-tabid="38"],
+.aemi-admin-tabs-controlls .aemi-admin-tabs__current-tab-input[data-tabid="19"]:checked ~ .aemi-admin-tabs__content > .aemi-admin-tabs__content-inner[data-tabid="39"],
+.aemi-admin-tabs-controlls .aemi-admin-tabs__current-tab-input[data-tabid="20"]:checked ~ .aemi-admin-tabs__content > .aemi-admin-tabs__content-inner[data-tabid="40"]{
+  display: block;
+}
+
+
+/** ============================================================
+                      REPEAT BOXS
+    ============================================================ */
+.aemi-boxs-repeat-container{
+  padding: 0 20px 20px;
+  background: #fff;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  border-collapse: collapse;
+}
+
+.aemi-boxs-repeat__buttons-container{
+  padding-top: 20px;
+}
+
+.aemi-boxs-repeat{
+  padding: 20px;
+  margin: 0 -20px;
+  border-top: 1px solid #ddd;
+  border-collapse: collapse;
+  display: flex;
+}
+
+.aemi-boxs-repeat:nth-child(even) {
+  background: #f7f7f7;
+}
+
+.aemi-boxs-repeat__content{
+  flex: 1;
+}
+
+.aemi-boxs-repeat__number{
+  padding: 0px 15px 0 0;
+  align-items: center;
+  display: flex;
+  border-right: 1px solid #eee;
+  font-weight: bold;
+  margin-right: 25px;
+  color: #777;
+}
+
+.aemi-boxs-repeat__options{
+  padding: 0 0 0 25px;
+}
+
+.aemi-boxs-repeat__remove-element{
+  background: #d63638;
+  border: none;
+  color: #fff;
+  padding: 0;
+  border-radius: 50%;
+  height: 30px;
+  width: 30px;
+  cursor: pointer;
+  transition: all 100ms;
+  transform: scale(1);
+}
+
+.aemi-boxs-repeat__remove-element:hover{
+  transform: scale(1.1);
+}
+
+/** ============================================================
+                REPEAT BOXS SELECT IMAGE THUMBNAIL
+    ============================================================ */
+.aemi-boxs-repeat__change-image-container{}
+.aemi-boxs-repeat__change-image-label-container{}
+.aemi-boxs-repeat__change-image-label{}
+.aemi-boxs-repeat__change-image-inner{}
+.aemi-boxs-repeat__change-image-content{}
+.aemi-boxs-repeat__change-image-thumbnail{
+  width: 200px;
+  height: 200px;
+  background: #eee;
+  margin-bottom: 17px;
+  border: 5px solid #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 10px -3px rgb(0 0 0 / 10%);
+  background-size: cover;
+  position: relative;
+}
+.aemi-boxs-repeat__change-image-btn-remove{
+  display: none;
+  position: absolute;
+  right: -18px;
+  top: -18px;
+  background: #d63638;
+  border: none;
+  color: #fff;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  padding: 0;
+  cursor: pointer;
+}
+.aemi-boxs-repeat__change-image-thumbnail-selected .aemi-boxs-repeat__change-image-btn-remove{
+  display: block;
+}
+.aemi-boxs-repeat__change-image-description{
+  margin-bottom: 20px;
+  color: #777;
+}
+.aemi-boxs-repeat__change-image-btn{}
+.aemi-boxs-repeat__change-image-input{
+  display: none;
+}
+
+@media screen and (min-width: 961px){
+  .auto-fold .interface-interface-skeleton {
+      left: 250px;
+  }
+}
+
+@media screen and (min-width: 783px){
+  .interface-interface-skeleton {
+      top: 45px;
+  }
+}
+
+.woocommerce-layout .woocommerce-layout__header{
+  top: 51px;
+}

@@ -1,0 +1,422 @@
+.sidebar {
+  background-color: var(--color-white);
+  height: calc(100% - 75px);
+}
+.mainHero {
+  flex-direction: row;
+  height: calc(100vh - 75px);
+}
+.rightbar {
+  height: 100%;
+  padding-bottom: 0;
+}
+.leftSideBar {
+  width: 355px;
+  border-right: 1px solid var(--color-border);
+  background:var(--color-white);
+  height: calc(100vh - 75px);
+}
+.detailProfile {
+  padding: 13px 24px 0 24px;
+}
+.profileImg img {
+  border-radius: 50%;
+  width: 98px;
+  width: 98px;
+}
+.profileContent ul {
+  flex-direction: column;
+}
+.profileContent h5 {
+  color: var(--color-black);
+  font-weight: 700;
+}
+
+.profileContent ul li {
+  font-size: var(--font-size-small);
+  color: var(--color-success);
+  font-weight: 500;
+  line-height: 30px;
+  letter-spacing: 0em;
+}
+.profileContent ul li .introductory{
+  font-size: var(--font-size-small);
+  color: var(--color-success);
+  font-weight: 500;
+  line-height: 30px;
+  letter-spacing: 0em;
+}
+.profileContent ul li svg {
+  margin-left: 5px;
+  margin-right: 2px;
+}
+.profileContent ul li svg path{
+  fill: var(--color-success);
+}
+.profileContent ul li span {
+  color: var(--color-grey);
+  font-size: var(--font-size-small);
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 0em;
+}
+#daStar {
+  width: 20px;
+  height: 20px;
+}
+.scoreCard {
+  padding: 4px 15px;
+  margin-top: 20px;
+}
+.scoreCard p:first-child {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--color-light-black);
+  font-size: var(--font-size-small);
+  font-weight: 500;
+  margin: 10px 0px;
+}
+.scoreCard p span,
+.subscriptionCard p:first-child span {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  gap: 4px;
+  font-size: var(--font-size-smaller);
+  color: var(--color-grey);
+  fill: var(--color-grey);
+}
+.scoreCard p span img,
+.subscriptionCard p:first-child span img {
+  height: 14px;
+}
+.scoreCard progress[value] {
+  --color: var(--color-primary); /* the progress color */
+  --background: var(--color-sharp-gray); /* the background color */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: none;
+  width: 100%;
+  border-radius: 10em;
+  background: var(--background);
+}
+.scoreCard progress[value]::-webkit-progress-bar {
+  border-radius: 10em;
+  background: var(--background);
+}
+.scoreCard progress[value]::-webkit-progress-value {
+  border-radius: 10em;
+  background: var(--color);
+}
+.scoreCard progress[value]::-moz-progress-bar {
+  border-radius: 10em;
+  background: var(--color);
+}
+
+label {
+  font-size: 8px;
+  font-weight: bold;
+  display: block;
+}
+
+.scoreCard p:nth-child(3) {
+  gap: 5px;
+  color: var(--color-primary);
+  font-size: var(--font-size-small);
+  font-weight: 500;
+  margin: 10px 0 5px 0;
+  justify-content: center;
+}
+.scoreCard p:nth-child(3) span {
+  color: var(--color-secondary);
+}
+.subscriptionCard {
+  padding: 4px 15px;
+  margin-top: 12px;
+}
+.subscriptionCard p:first-child {
+  font-size: var(--font-size-small);
+  font-weight: 500;
+  line-height: 22px;
+  letter-spacing: 0em;
+  color: var(--color-light-black);
+  margin: 10px 0px;
+}
+.subscriptionCard p:nth-child(2) {
+  color: var(--color-grey);
+  font-size: var(--font-size-smaller);
+  font-weight: 400;
+  margin: 10px 0px;
+}
+.subscriptionCard p:nth-child(2) span {
+  color: var(--color-success);
+  font-weight: 500;
+}
+.subscriptionCard p:nth-child(3) {
+  color: var(--color-grey);
+  font-size: var(--font-size-smaller);
+  font-weight: 400;
+  margin: 10px 0px;
+}
+.subscriptionCard p:nth-child(3) span {
+  font-weight: 500;
+}
+.cancel-title {
+  font-size: var(--font-size-smaller);
+  color: var(--color-danger-light);
+  border-bottom: 1px dashed var(--color-danger-light);
+  width: max-content;
+  cursor: pointer;
+  font-weight: 500;
+  margin-bottom: 12px;
+}
+.cancel-title:hover {
+  opacity: 0.9;
+  border-bottom-style: solid;
+}
+.profileTabs {
+  border-bottom: 1px solid var(--color-border);
+  padding-top: 30px;
+}
+.profileTabs ul {
+  flex-direction: row;
+  list-style: none;
+}
+.profileTabs ul li.TabButton {
+  width: 100%;
+  border: 0;
+  border-bottom: 1px solid var(--color-white);
+  background-color: var(--color-white);
+  margin: 0;
+  font-size: var(--font-size-small);
+  font-weight: 400;
+  line-height: var(--font-size-small);
+  color: var(--color-light-black);
+  padding: 16px 0;
+  cursor: pointer;
+  white-space: nowrap;
+  text-align: center;
+}
+.profileTabs ul li.TabButtonSelected {
+  color: var(--color-black) !important;
+  border-bottom-color: 1px solid var(--color-light-black) !important;
+  font-weight: 600;
+}
+.profileTabs ul li.TabButton a {
+  color: var(--color-light-black);
+}
+.profileTabs ul li.TabButtonSelected a{
+  color: var(--color-black);
+}
+.detailTab {
+  display: flex;
+  margin: 24px 0;
+  padding: 0 24px 0 36px;
+}
+.detailTab ul {
+  flex-direction: column;
+  gap: 24px;
+}
+.detailTab button {
+  gap: 5px;
+  background: var(--color-light-white);
+  padding: 5px 10px 5px 7px;
+  border-radius: var(--font-size-smaller);
+  cursor: pointer;
+  color: var(--color-purple);
+  font-size: 15px;
+  font-weight: 600;
+  border: none;
+  white-space: nowrap;
+}
+.detailTab button span {
+  gap: 5px;
+  border-radius: var(--font-size-smaller);
+}
+
+
+.addressDetail h4 {
+  margin-bottom: 0  !important
+}
+
+.addressDetail {
+  flex-direction: column;
+  gap: 4px;
+}
+.rightbar {
+  width: 100%;
+}
+.leftSideBar {
+  display: block;
+}
+.sideBarClose img {
+  text-align: end;
+  display: none;
+}
+.detailTab h4 {
+  margin: 0;
+  color: var(--color-grey);
+  font-size: var(--font-size-smaller);
+  font-weight: 400;
+  margin-bottom: 5px;
+}
+.detailTab h5 {
+  margin: 0;
+  color: var(--color-black);
+  font-size: var(--font-size-small);
+  font-weight: 500;
+}
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 260px;
+  background-color: var(--color-black);
+  color: var(--color-white);
+  border-radius: 6px;
+  padding: 5px 10px;
+  position: absolute;
+  z-index: 1;
+  top: -14px;
+  left: 130%;
+}
+
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 100%;
+  margin-top: -6px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent var(--color-black) transparent transparent;
+}
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
+.showCard {
+  display: block !important;
+}
+
+.d-chart-n {
+  display: none;
+}
+
+.d-chart-show {
+  display: block;
+}
+
+.tabContainer nav ul li a {
+  text-decoration: none;
+  color: var(--color-light-black);
+}
+.tabContainer nav ul li a.active {
+  color: var(--color-white);
+  background-color: var(--color-secondary);
+}
+.tabContainer nav ul li a {
+  padding: 10px 20px;
+  border-radius: 22px;
+  display: block;
+}
+.tabContainer nav ul a {
+  text-decoration: none;
+  color: var(--color-light-black);
+}
+.Mymenu-bar svg {
+  width: 30px;
+  height: 20px;
+  display: none;
+  cursor: pointer;
+}
+body:has(.showSideBar) {
+  overflow: hidden;
+}
+@media only screen and (max-width: 450px) {
+  .tooltip .tooltiptext {
+    visibility: hidden;
+    width: 200px;
+    background-color: var(--color-black);
+    color: var(--color-white);
+    border-radius: 6px;
+    padding: 5px 10px;
+    position: absolute;
+    z-index: 1;
+    top: 21px;
+    right: -100px;
+    left: unset;
+  }
+  .tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: -5px;
+    right: 51%;
+    margin-top: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent var(--color-black) transparent;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .profile {
+    flex-direction: column;
+  }
+
+  .detailTab ul li {
+    display: flex;
+    margin-bottom: 10px;
+    flex-direction: column;
+    gap: 10px;
+    align-items: normal;
+  }
+
+}
+@media only screen and (max-width: 991px) {
+  .leftSideBar {
+    display: none;
+    position: fixed;
+    background-color: var(--color-white);
+    z-index: 9999;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    max-width: 100%;
+    overflow: auto;
+  }
+  .sideBarClose img {
+    display: block;
+    cursor: pointer;
+  }
+  .showSideBar {
+    display: block !important;
+  }
+  .scoreCard progress[value] {
+    width: 100%;
+  }
+  .Mymenu-bar svg {
+    display: block;
+    width: 40px;
+    height: 30px;
+  }
+  .tabContainer {
+    display: flex;
+    align-items: center;
+    padding-left: 35px !important;
+  }
+  .tabContainer .Mymenu-bar {
+    position: absolute;
+    left: 0;
+    background-color: var(--color-white);
+  }
+}
+@media (min-width: 3200px) {
+  .leftSideBar {
+    height: 100%;
+  }
+}

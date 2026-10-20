@@ -1,0 +1,180 @@
+.rightbarr {
+  width: 100%;
+}
+.tabContainer {
+  width: 100%;
+  border-bottom: 1px solid var(--color-border);
+  padding: 10px 0;
+}
+.interestCard {
+  margin: 24px;
+}
+.pageDescription {
+  margin-bottom: 25px;
+}
+.tabContainer nav ul {
+  display: flex;
+  gap: 8px;
+  font-size: 18px;
+  font-weight: 400;
+  padding-left: 8px;
+  margin: 0px;
+  align-items: center;
+  color: var(--color-light-black);
+}
+.tabContainer nav ul li {
+  list-style: none;
+}
+.interestPaper {
+  border: 1px solid var(--color-border);
+  background-color: var(--color-white);
+  border-radius: var(--radius-standard);
+}
+.heading {
+  padding: 20px;
+}
+
+.myInterestContainer {
+  justify-content: center;
+  background-color: var(--color-sidebar-bg);
+  padding: 20px 20px;
+  min-height: calc(100vh - 170px);
+}
+
+.description {
+  padding: 20px;
+}
+.description div {
+  margin-bottom: 24px;
+}
+
+.interestItemTitle {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  font-weight: 400;
+  font-size: 18px;
+  color: var(--color-light-black);
+}
+
+/* Hide the browser's default checkbox */
+.interestItemTitle input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkBox {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: var(--color-border);
+  border-radius: 6px;
+}
+
+/* On mouse-over, add a grey background color */
+.interestItemTitle:hover input ~ .checkBox {
+  background-color: var(--color-border);
+}
+
+/* When the checkbox is checked, add a blue background */
+.interestItemTitle input:checked ~ .checkBox {
+  background-color: var(--color-secondary);
+}
+
+/* Create the checkBox/indicator (hidden when not checked) */
+.checkBox:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkBox when checked */
+.interestItemTitle input:checked ~ .checkBox:after {
+  display: block;
+}
+
+/* Style the checkBox/indicator */
+.interestItemTitle .checkBox:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid var(--color-white);
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.interestListRow {
+  display: flex;
+  flex-direction: column;
+  width: 33.33%;
+}
+.chooseBox label {
+  font-weight: none;
+}
+.Updatebtn {
+  margin-top: 15px;
+}
+.Updatebtn button {
+  padding: 15px 30px;
+  color: var(--color-white);
+  background-color: var(--color-secondary);
+  border: none;
+  border-radius: var(--radius-standard);
+  font-size: 17px;
+  font-weight: 500;
+  transition-duration: 0.3s;
+  cursor: pointer;
+}
+.Updatebtn button:hover {
+  opacity: 0.9;
+  transition-duration: 0.3s;
+}
+
+@media only screen and (max-width: 991px) {
+  .rightbar {
+    width: 100% !important;
+  }
+  .totalSco progress {
+    width: 100% !important;
+  }
+  .mainScore {
+    border-radius: 0px !important;
+  }
+  .scoreLevel {
+    width: 100% !important;
+    padding: 0;
+  }
+  .tabContainer nav {
+    overflow: scroll;
+  }
+  .tabContainer nav ul {
+    white-space: nowrap;
+  }
+  .tabContainer nav::-webkit-scrollbar {
+    width: 0px;
+    height: 0;
+  }
+  .chooseBox {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+  }
+  .interestListRow {
+    width: 100%;
+  }
+}

@@ -1,0 +1,156 @@
+.searchResultsPage {
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+.searchResultsPage .searchBarHolder {
+  margin-bottom: 34px;
+}
+.searchResultsPage .searchBarHolder .resultsFound {
+  font-size: 14px;
+  display: block;
+  color: var(--color-secondary);
+}
+
+.searchResultsPage .searchBarHolder .searchBar {
+  background: var(--color-white);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-small);
+  height: 45px;
+  margin-left: 15px;
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+  padding-right: 10px;
+  width: 100%;
+  max-width: 350px;
+}
+.searchResultsPage .searchBarHolder .searchBar input {
+  background: transparent;
+  border: 0;
+  outline: 0;
+  height: 100%;
+  width: 100%;
+  padding-left: 10px;
+  font-size: 17px;
+  color: var(--color-black);
+}
+.searchResultsPage .searchBarHolder .searchBar input::placeholder {
+  color: var(--color-grey);
+}
+
+.searchResultsPage .resultsHolder {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 24px;
+}
+.searchResultsPage .resultsHolder .card {
+  cursor: pointer;
+  transition-duration: 0.3s;
+}
+.searchResultsPage .resultsHolder .card:hover {
+  transform: translateY(-5px);
+  transition-duration: 0.3s;
+}
+.searchResultsPage .resultsHolder .card .card-image-holder {
+  position: relative;
+}
+.searchResultsPage .resultsHolder .card .card-image-holder .card-image-full {
+  width: 100%;
+  height: auto;
+}
+.searchResultsPage .resultsHolder .card .card-image-holder .icons {
+  position: absolute;
+  bottom: -15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0px 14px;
+}
+.searchResultsPage .resultsHolder .card .card-image-holder .icons .heartIcon {
+  background-color: var(--color-white);
+  padding: 4px 6px 0px 6px;
+  border-radius: 50%;
+}
+.searchResultsPage .resultsHolder .card .card-image-holder .icons .webniar {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background-color: var(--color-light-white);
+  border-radius: 50px;
+  padding: 5px 12px;
+}
+.searchResultsPage
+  .resultsHolder
+  .card
+  .card-image-holder
+  .icons
+  .webniar
+  .wrapperWebniar
+  p {
+  color: var(--color-purple);
+  font-size: 16px;
+  font-weight: 600;
+}
+.searchResultsPage .resultsHolder .card .card-content .card-title {
+  color: var(--color-black);
+  font-weight: 600;
+  margin-bottom: 10px;
+  transition-duration: 0.3s;
+}
+.searchResultsPage .resultsHolder .card:hover .card-title {
+  color: var(--color-primary);
+  transition-duration: 0.3s;
+}
+.searchResultsPage .resultsHolder .card .card-content .card-para-info {
+  color: var(--color-light-black);
+  font-size: 16px;
+}
+
+.searchResultsPage .paginationHolder {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  justify-content: center;
+  margin-top: 50px;
+}
+.searchResultsPage .paginationHolder .paginate {
+  border-radius: var(--radius-standard);
+  border: 1px solid var(--color-border);
+  background: var(--color-light-white);
+  padding: 8px 12px 6px 12px;
+  cursor: pointer;
+  height: 45px;
+  width: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition-duration: 0.3s;
+}
+.searchResultsPage .paginationHolder .paginate.active,
+.searchResultsPage .paginationHolder .paginate:hover {
+  background: var(--color-primary);
+  color: var(--color-white);
+  border-color: var(--color-primary);
+  transition-duration: 0.3s;
+}
+.searchResultsPage .paginationHolder .paginate:hover svg path {
+  fill: var(--color-white);
+}
+@media screen and (max-width: 576px) {
+  .searchResultsPage .resultsHolder {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+  .flex.searchBarHolder {
+    display: block;
+  }
+  .searchResultsPage .searchBarHolder .searchBar {
+    margin-left: 0px;
+    margin-top: 20px;
+  }
+}
+@media (min-width: 576px) and (max-width: 991px) {
+  .searchResultsPage .resultsHolder {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
