@@ -605,6 +605,44 @@
     visibility: visible
 }
 
+/* Registro: logo arriba en el panel azul, sin triangulo ni cruces, texto mas abajo */
+.aemi-registration-open-page .aemi-general-container-login-page .login-container-lateral-animation .login-abstract-icon,
+.aemi-registration-open-page .aemi-general-container-login-page .login-container-lateral-animation .login-abstract-icon-two {
+    display: none
+}
+
+.aemi-registration-open-page .aemi-general-container-login-page .login-container-lateral-animation .aemi-register-lateral-logo {
+    position: absolute;
+    top: 110px;
+    left: -150px;
+    right: 0;
+    text-align: center;
+    z-index: 2
+}
+
+.aemi-registration-open-page .aemi-general-container-login-page .login-container-lateral-animation .aemi-register-lateral-logo img {
+    max-width: 260px;
+    width: 60%;
+    height: auto
+}
+
+.aemi-registration-open-page .aemi-general-container-login-page .login-container-lateral-animation .login-container-lateral-animation-inner .login-container-lateral-animation-text {
+    padding-top: 22vh
+}
+
+.aemi-register-lateral-logo .aemi-register-lateral-tagline,
+.aemi-register-lateral-logo .aemi-register-lateral-login-link {
+    display: none
+}
+
+.aemi-general-container-login-page .login-container-lateral-animation .aemi-register-lateral-logo {
+    display: none
+}
+
+.aemi-registration-open-page .aemi-general-container-login-page .login-container-lateral-animation .aemi-register-lateral-logo {
+    display: block
+}
+
 @keyframes gotoregistration {
     0% {
         right: 0%
@@ -729,6 +767,83 @@
 
     .aemi-registration-open-page .aemi-general-container-login-page .aemi-column-login {
         display: none
+    }
+}
+
+@media (max-width: 767.98px) {
+    .aemi-registration-open-page .aemi-general-container-login-page .login-container-lateral-animation .aemi-register-lateral-logo {
+        top: 40px;
+        left: 0;
+        right: 0;
+        width: 100%;
+        text-align: center
+    }
+
+    .aemi-registration-open-page .aemi-general-container-login-page .login-container-lateral-animation .aemi-register-lateral-logo img {
+        display: block;
+        margin: 0 auto;
+        width: 200px;
+        max-width: 70%
+    }
+
+    .aemi-register-lateral-logo .aemi-register-lateral-tagline {
+        display: block;
+        color: #fff;
+        font-size: 18px;
+        font-weight: 500;
+        letter-spacing: .5px;
+        margin: 12px 0 0
+    }
+
+    .aemi-registration-open-page .aemi-register-lateral-logo .aemi-register-lateral-login-link {
+        display: block;
+        color: #fff !important;
+        font-size: 15px;
+        margin: 24px 0 0
+    }
+
+    .aemi-registration-open-page .aemi-register-lateral-logo .aemi-register-lateral-login-link a {
+        color: #ff8200 !important;
+        font-weight: 600;
+        text-decoration: underline
+    }
+
+    .aemi-registration-open-page .aemi-general-container-login-page .aemi-column-register {
+        margin-top: 230px
+    }
+
+    .aemi-general-container-login-page .aemi-mobile-others {
+        margin-top: 30px;
+        text-align: center
+    }
+}
+
+/* Registro (movil): labels flotantes de Profile Builder que no se salgan del campo */
+@media (max-width: 767.98px) {
+    .aemi-column-register #wppb-form-style-1-wrapper .wppb-form-text-field.label-inside > label,
+    .aemi-column-register #wppb-form-style-1-wrapper .wppb-form-select-field.label-inside > label {
+        box-sizing: border-box !important;
+        width: 100% !important;
+        max-width: 100% !important;
+        height: 56px;
+        display: flex !important;
+        align-items: center;
+        padding: 0 40px 0 15px !important;
+        font-size: 13px !important;
+        line-height: 1.2 !important;
+        overflow: hidden
+    }
+
+    .aemi-column-register #wppb-form-style-1-wrapper .wppb-form-text-field.label-inside > label.active,
+    .aemi-column-register #wppb-form-style-1-wrapper .wppb-form-select-field.label-inside > label.active,
+    .aemi-column-register #wppb-form-style-1-wrapper .wppb-form-text-field.label-inside > label.focused,
+    .aemi-column-register #wppb-form-style-1-wrapper .wppb-form-select-field.label-inside > label.focused {
+        height: 30px;
+        font-size: 11px !important;
+        line-height: 30px !important;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        display: block !important
     }
 }
 

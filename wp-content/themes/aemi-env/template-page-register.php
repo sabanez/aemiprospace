@@ -36,13 +36,16 @@
 		      <div class="login-abstract-icon-two"></div>
 		      <div class="login-abstract-icon-three"></div>
 
+		      <div class="aemi-register-lateral-logo">
+		        <img src="https://prospace.aemi.es/wp-content/uploads/2026/11/logoAEMI_CMJN_white_orange_CC.png" alt="<?php echo esc_attr(get_bloginfo('name')); ?>" title="<?php echo esc_attr(get_bloginfo('name')); ?>" />
+		        <p class="aemi-register-lateral-tagline">Espacio profesional</p>
+		        <p class="aemi-register-lateral-login-link">¿Ya tienes una cuenta? <a href="<?php echo get_aemi_my_account_url(); ?>">Iniciar sesión</a></p>
+		      </div>
+
 		      <div class="login-container-lateral-animation-text">
 		        <div class="login-container-lateral-animation-text-login"></div>
 		        <div class="login-container-lateral-animation-text-register">
-					<h2>¿Tienes una cuenta?</h2>
-		          	<p>
-		            	Inicia sesión para acceder al espacio profesional
-		          	</p>
+					<h2>¿Tienes una cuenta en el <br>espacio profesional?</h2>		          	
 		          	<a href="<?php echo get_aemi_my_account_url(); ?>" class="btn btn-secondary login-goto-to-login">Ir a la página de inicio de sesión</a>
 		        </div>
 		      </div>
